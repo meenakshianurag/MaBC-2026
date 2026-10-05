@@ -1,0 +1,93 @@
+---
+title: "Callari E-TABM-810: load author-provided collapsed expression matrix"
+author: "Junkai Wang"
+date: "9/4/2026"
+output:
+  html_document:
+    keep_md: true
+    toc: true
+editor_options:
+  chunk_output_type: console
+---
+
+```{r setup}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+library(data.table)
+
+data_dir <- "." 
+out_dir  <- file.path(data_dir, "processed"); dir.create(out_dir, showWarnings = FALSE)
+f_expr <- file.path(data_dir, "Raw_Data/MBC_data_collapsed_to_symbols.txt")
+stopifnot(file.exists(f_expr))
+```
+
+## 1. Read the matrix
+
+```{r read}
+hdr <- fread(f_expr, skip = 1, nrows = 0)
+dims <- as.integer(strsplit(readLines(f_expr, n = 2)[2], "\t")[[1]])
+cat("Header declares:", dims[1], "genes x", dims[2], "samples\n")
+
+dt <- fread(f_expr, skip = 2, fill = TRUE, header = TRUE)
+dt <- dt[, 1:92]
+setnames(dt, c("gene", "description", names(dt)[-(1:2)]))
+dim(dt)
+stopifnot(nrow(dt) == dims[1], ncol(dt) - 2 == dims[2])
+### matches manuscript: 7,792 genes x 90 samples ###
+```
+
+## 2. Sample metadata (from sample ID prefix, cross-checked against sdrf)
+
+```{r meta}
+samples <- names(dt)[-(1:2)]
+sex <- fifelse(grepl("^Bm", samples), "male", fifelse(grepl("^Ta", samples), "female", NA_character_))
+stopifnot(!anyNA(sex), sum(sex == "male") == 37, sum(sex == "female") == 53)
+
+meta <- data.table(sample = samples, sex = sex)
+meta[, .N, by = sex]
+
+## optional: attach age/ER/PgR from the ArrayExpress sdrf if available alongside
+f_sdrf <- file.path(data_dir, "E-TABM-810.sdrf.txt")
+if (file.exists(f_sdrf)) {
+  sdrf <- fread(f_sdrf, check.names = FALSE)
+  sdrf_u <- unique(sdrf[, .(sample = `Sample Name`,
+                            age = `Characteristics [Age]`,
+                            clinical_info = `Characteristics [ClinicalInformation]`)])
+  meta <- merge(meta, sdrf_u, by = "sample", all.x = TRUE, sort = FALSE)
+  meta <- meta[match(samples, sample)]
+}
+meta[1:5]
+```
+
+## 3. Expression matrix
+
+```{r matrix}
+expr <- as.matrix(dt[, -(1:2)])
+rownames(expr) <- dt$gene
+stopifnot(!anyDuplicated(rownames(expr)))   # already collapsed to unique symbols
+dim(expr)
+expr[1:5, 1:5]
+
+male_id   <- meta[sex == "male",   sample]
+female_id <- meta[sex == "female", sample]
+```
+
+## 4. Save outputs
+
+```{r save}
+write.table(data.frame(GeneSymbol = rownames(expr), expr, check.names = FALSE),
+           file.path(out_dir, "output_Callari_expr_symbol.txt"),
+           sep = "\t", row.names = FALSE, quote = FALSE)
+fwrite(meta, file.path(out_dir, "output_Callari_metadata.txt"), sep = "\t")
+
+saveRDS(list(expr = expr, meta = as.data.frame(meta),
+             male_id = male_id, female_id = female_id,
+             source = "Author-provided (Maurizio Callari), MBC_data_collapsed_to_symbols.txt",
+             genes = nrow(expr), processed = Sys.Date()),
+        file.path(out_dir, "Callari_processed.rds"))
+
+list.files(out_dir)
+```
+
+```{r session}
+sessionInfo()
+```

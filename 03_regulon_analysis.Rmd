@@ -1,0 +1,203 @@
+---
+title: "Differential regulon activity in MBC vs FBC (pySCENIC / GENIE3, Callari cohort)"
+author: "Junkai Wang"
+date: "`r format(Sys.Date(), '%m/%d/%Y')`"
+output:
+  html_document:
+    keep_md: true
+    toc: true
+editor_options:
+  chunk_output_type: console
+---
+
+Downstream analysis of the pySCENIC run in `02_run_pyscenic_genie3.sh`
+(GENIE3 -> cisTarget -> AUCell on the Callari cohort, 37 MBC vs 53 FBC).
+
+Same statistical framework as the rest of the manuscript: two-sided Wilcoxon
+rank-sum test per regulon, Benjamini-Hochberg FDR, significance at FDR < 0.05.
+
+```{r setup}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+library(data.table); library(ggplot2); library(ggrepel)
+
+auc_dir <- "Output_genie3"
+#mod_gmt <- "~/Desktop/MBC/06_Network_analysis/Raw_Data/callari_knn25_coexpr_mods_corrected.gmt"
+out_dir <- "Output_analysis"; dir.create(out_dir, showWarnings = FALSE)
+```
+
+## 1. Load AUCell scores and sample annotation
+
+```{r load}
+read_auc <- function(f) {
+  a <- fread(f)
+  m <- as.matrix(a[, -1]); rownames(m) <- a[[1]]      # samples x regulons
+  m <- t(m)                                           # -> regulons x samples
+  rownames(m) <- sub("\\(\\+\\)$", "", rownames(m))   # "IRF8(+)" -> "IRF8"
+  m
+}
+auc  <- read_auc(file.path(auc_dir, "auc_genie3.csv"))
+meta <- fread("Input/callari_meta.csv")
+meta <- meta[match(colnames(auc), sample)]
+stopifnot(identical(meta$sample, colnames(auc)))
+
+male   <- meta[sex == "male",   sample]
+female <- meta[sex == "female", sample]
+cat(nrow(auc), "regulons |", length(male), "MBC |", length(female), "FBC\n")
+```
+
+## 2. Regulon sizes
+
+```{r regulons}
+reg <- fread(file.path(auc_dir, "regulons_genie3.csv"), skip = 3, header = FALSE)
+## column 1 = TF, column 9 = target list "[('GENE', weight), ...]"
+setnames(reg, c(1, 9), c("TF", "targets"))
+reg[, TF := sub("\\(\\+\\)$", "", TF)]
+parse_targets <- function(x) unique(regmatches(x, gregexpr("(?<=\\(')[^']+", x, perl = TRUE))[[1]])
+reg_list <- setNames(lapply(reg$targets, parse_targets), reg$TF)
+reg_list <- reg_list[rownames(auc)]
+data.table(regulon = names(reg_list), n_targets = lengths(reg_list))[order(-n_targets)][1:10]
+```
+
+## 3. Differential regulon activity (Wilcoxon, FDR < 0.05)
+
+```{r de}
+wilcox_regulons <- function(mat, g1, g2, name1 = "MBC", name2 = "FBC") {
+  m1 <- mat[, g1, drop = FALSE]; m2 <- mat[, g2, drop = FALSE]
+  p <- vapply(seq_len(nrow(mat)), function(i)
+    suppressWarnings(wilcox.test(m1[i, ], m2[i, ])$p.value), numeric(1))
+  med1 <- matrixStats::rowMedians(m1); med2 <- matrixStats::rowMedians(m2)
+  res <- data.table(regulon = rownames(mat), med1, med2,
+                    median_difference = med1 - med2, pvalue = p,
+                    FDR = p.adjust(p, "BH"))
+  setnames(res, c("med1", "med2"), paste0(c(name1, name2), "_median"))
+  res[, signed_logP := -log10(pvalue) * ifelse(median_difference > 0, 1, -1)]
+  res[order(-signed_logP)]
+}
+
+de <- wilcox_regulons(auc, male, female)
+de[, n_targets := lengths(reg_list)[regulon]]
+de[, direction := fifelse(FDR >= 0.05, "ns",
+                   fifelse(median_difference > 0, "up in MBC", "down in MBC"))]
+de[, .N, by = direction]
+de[FDR < 0.05][order(median_difference)][1:20]
+fwrite(de, file.path(out_dir, "regulon_differential_MBC_vs_FBC_genie3.csv"))
+```
+
+## 4. Volcano
+
+```{r volcano, fig.width=6.5, fig.height=5.5}
+lab <- rbind(de[direction == "up in MBC"][order(FDR)][1:10],
+             de[direction == "down in MBC"][order(FDR)][1:10])[!is.na(regulon)]
+p_vol <- ggplot(de, aes(median_difference, -log10(FDR), color = direction)) +
+  geom_point(aes(size = n_targets), alpha = .7) +
+  scale_color_manual(values = c("up in MBC" = "red", "down in MBC" = "blue", ns = "grey75"),
+                     breaks = c("up in MBC", "down in MBC", "ns")) +
+  scale_size_continuous(range = c(1, 5), name = "targets") +
+  geom_text_repel(data = lab, aes(label = regulon), size = 3, show.legend = FALSE,
+                  max.overlaps = 30) +
+  geom_hline(yintercept = -log10(0.05), linetype = 2, color = "grey50") +
+  geom_vline(xintercept = 0, linetype = 2, color = "grey50") +
+  labs(x = "Median AUCell difference (MBC - FBC)", y = "-log10 FDR (Wilcoxon, BH)",
+       color = NULL, title = "Regulon activity, Callari cohort (GENIE3)") +
+  theme_bw(base_size = 11) +
+  theme(panel.border = element_rect(color = "black", fill = NA, linewidth = .6),
+        panel.grid = element_blank())
+p_vol
+ggsave(file.path(out_dir, "regulon_volcano_genie3.pdf"), p_vol, width = 6.5, height = 5.5)
+```
+
+<!-- ## 5. Regulon overlap with the knn25 co-expression modules -->
+
+<!-- Hypergeometric test of each significant regulon's target set against each -->
+<!-- co-expression module, over the genes present in the Callari matrix. -->
+
+<!-- ```{r module_overlap} -->
+<!-- read_gmt <- function(f) { -->
+<!--   p <- strsplit(readLines(f), "\t") -->
+<!--   setNames(lapply(p, function(x) setdiff(trimws(x[-(1:2)]), c("", NA))), -->
+<!--            toupper(sapply(p, `[`, 1)))   # uppercase module names, as in 05/06 -->
+<!-- } -->
+<!-- mods <- read_gmt(mod_gmt) -->
+<!-- ## rename modules: Level_2_Module_2 -> L2M2 (matches 05/06) -->
+<!-- names(mods) <- gsub("Level_?(\\d+)_?Module_?(\\d+)", "L\\1M\\2", -->
+<!--                     names(mods), ignore.case = TRUE) -->
+<!-- universe <- fread("Input/callari_expr.csv", nrows = 0) -->
+<!-- universe <- setdiff(names(universe), "sample") -->
+<!-- mods <- lapply(mods, intersect, universe) -->
+<!-- mods <- mods[lengths(mods) >= 5] -->
+
+<!-- ov <- rbindlist(lapply(de[FDR < 0.05, regulon], function(r) { -->
+<!--   tg <- intersect(reg_list[[r]], universe) -->
+<!--   rbindlist(lapply(names(mods), function(m) { -->
+<!--     k <- length(intersect(tg, mods[[m]])) -->
+<!--     data.table(regulon = r, module = m, n_targets = length(tg), -->
+<!--                n_module = length(mods[[m]]), overlap = k, -->
+<!--                pvalue = phyper(k - 1, length(tg), length(universe) - length(tg), -->
+<!--                                length(mods[[m]]), lower.tail = FALSE)) -->
+<!--   })) -->
+<!-- })) -->
+<!-- ov[, FDR := p.adjust(pvalue, "BH")] -->
+<!-- cat("pairs tested:", nrow(ov), "| significant (FDR<0.05):", sum(ov$FDR < 0.05), "\n") -->
+<!-- ov[FDR < 0.05][order(pvalue)][1:20] -->
+<!-- fwrite(ov, file.path(out_dir, "regulon_module_overlap_genie3.csv")) -->
+<!-- ``` -->
+
+<!-- ## 6. Regulon-module overlap, visualised -->
+
+<!-- The hypergeometric table has 9,374 rows, too many to plot directly. The figure below -->
+<!-- restricts it to the intersection that matters for the manuscript: differentially -->
+<!-- active regulons x tumour-associated modules. -->
+
+<!-- ```{r fig-setup} -->
+<!-- net_dir <- "~/Desktop/MBC/05_Network_analysis" -->
+
+<!-- ## tumour-associated modules from script 05; match the L#M# naming used above -->
+<!-- ts <- fread(file.path(net_dir, "Output", "tumor_specific_modules.csv")) -->
+
+<!-- ov_ts <- ov[FDR < 0.05 & module %in% ts$module] -->
+<!-- ov_ts <- merge(ov_ts, ts[, .(module, mod_direction = direction)], by = "module") -->
+<!-- ov_ts <- merge(ov_ts, de[, .(regulon, reg_direction = direction)], by = "regulon") -->
+
+<!-- cat(nrow(ov_ts), "significant pairs |", uniqueN(ov_ts$regulon), "regulons x", -->
+<!--     uniqueN(ov_ts$module), "tumour-associated modules\n") -->
+<!-- ov_ts[order(FDR)][1:min(15, .N), -->
+<!--                   .(regulon, module, overlap, n_targets, n_module, -->
+<!--                     FDR = signif(FDR, 2), reg_direction, mod_direction)] -->
+<!-- ``` -->
+
+<!-- Rows are regulons, columns are modules; point size is the number of shared genes and -->
+<!-- colour the strength of the overlap. Panels split the modules by whether they are up- -->
+<!-- or down-regulated in MBC. -->
+
+<!-- ```{r fig-bubble, fig.width=7.5, fig.height=6} -->
+<!-- d <- copy(ov_ts)[, logFDR := -log10(FDR)] -->
+
+<!-- mod_ord <- d[, .(s = sum(logFDR)), by = module][order(-s), module] -->
+<!-- reg_ord <- d[, .(s = sum(logFDR)), by = regulon][order(s), regulon] -->
+<!-- d[, `:=`(module  = factor(module,  mod_ord), -->
+<!--          regulon = factor(regulon, reg_ord))] -->
+
+<!-- p_bubble <- ggplot(d, aes(module, regulon)) + -->
+<!--   geom_point(aes(size = overlap, fill = logFDR), -->
+<!--              shape = 21, colour = "grey30", stroke = .3) + -->
+<!--   scale_fill_gradient(low = "#FDD9C7", high = "#B40426", -->
+<!--                       name = expression(-log[10]~FDR)) + -->
+<!--   scale_size_continuous(range = c(1.5, 7), name = "shared\ngenes") + -->
+<!--   facet_grid(. ~ mod_direction, scales = "free_x", space = "free_x") + -->
+<!--   labs(x = NULL, y = NULL, -->
+<!--        title = "Regulon target sets overlap the tumour-associated modules", -->
+<!--        subtitle = "hypergeometric test, FDR < 0.05") + -->
+<!--   theme_bw(base_size = 10) + -->
+<!--   theme(axis.text.x = element_text(angle = 45, hjust = 1), -->
+<!--         panel.grid.major = element_line(colour = "grey92", linewidth = .3), -->
+<!--         panel.grid.minor = element_blank(), -->
+<!--         strip.background = element_rect(fill = "grey95", colour = "black")) -->
+<!-- p_bubble -->
+<!-- ggsave(file.path(out_dir, "regulon_module_bubble.pdf"), p_bubble, -->
+<!--        width = 7.5, height = 6) -->
+<!-- ``` -->
+
+```{r session}
+list.files(out_dir)
+sessionInfo()
+```
