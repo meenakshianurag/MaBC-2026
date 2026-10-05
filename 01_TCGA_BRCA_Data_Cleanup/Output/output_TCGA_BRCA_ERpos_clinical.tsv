@@ -1,0 +1,808 @@
+patient_id	gender	age	stage	T_stage	N_stage	M_stage	race	vital_status	days_to_death	days_to_last_follow_up	ER_status	PR_status	HER2_IHC	histology
+TCGA-A8-A09E	female	73.2	Stage IIIB	T4b	N1a	M0	not reported	Alive	NA	1492	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A7-A0DC	female	63.8	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	NA	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08F	female	59.2	Stage IIIC	T2	N3a	M0	not reported	Alive	NA	1004	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A091	female	61.7	Stage IIA	T2	N0	M0	not reported	Alive	NA	1004	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JI	female	56.7	Stage IIA	T1c	N1	M0	white	Alive	NA	1528	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0D4	female	37.8	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	767	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A62V	male	58.6	Stage IV	T2	N1a	M1	black or african american	Dead	348	348	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XB	female	62.9	Stage IIB	T2	N1a	M0	white	Alive	NA	552	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-OL-A6VQ	female	49.7	Stage IIA	T2	N0	MX	white	Alive	NA	600	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-B6-A0WV	female	67.9	Stage IIB	T2	N1b	M0	white	Dead	2417	2417	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-LL-A442	female	56.1	Stage IIA	T2	N0 (i-)	MX	black or african american	Alive	NA	889	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-PE-A5DC	female	72.6	Stage IIIA	T2	N2a	M0	white	Dead	1430	1430	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-A2-A0EP	female	56.4	Stage I	T1	N0 (i+)	M0	white	Alive	NA	3603	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-AN-A0AK	female	76.6	Stage IIA	T2	N0	M0	white	Alive	NA	224	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A28Q	female	46.2	Stage IIB	T2	N1a	M0	white	Alive	NA	1119	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A259	female	70.3	Stage I	T1c	N0 (i-)	M0	black or african american	Alive	NA	1596	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A2FF	female	NA	Stage IIB	T2	N1	MX	asian	Alive	NA	2759	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AC-A2FG	female	80	Stage IIB	T2	N1a	MX	white	Alive	NA	1853	Positive	Negative	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-BH-A0B0	female	56.9	Stage I	T1c	N0	M0	black or african american	Alive	NA	2477	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JD	female	59.8	Stage IIIA	T3	N1a	M0	white	Alive	NA	2190	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FE	female	31.9	Stage IIB	T2	N1	M0	white	Dead	2273	2273	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BM	female	54.9	Stage IIB	T2	N1a	M0	white	Alive	NA	1876	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FZ	female	45.3	Stage IIIA	T2	N2	M0	white	Alive	NA	10	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A07F	female	65	Stage IIB	T2	N1a	M0	not reported	Alive	NA	577	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0EO	female	54.4	Stage IA	T1	N0 (i-)	M0	white	Alive	NA	2442	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A5J0	female	63.2	Stage IA	T1c	N0	M0	black or african american	Alive	NA	715	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08I	female	53.1	Stage IIA	T2	N0	M0	not reported	Alive	NA	365	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A255	female	62.4	Stage I	T1	N0	M0	white	Alive	NA	2161	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A0J8	female	61	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	680	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A3W7	female	66.6	Stage IIB	T2	N1a	MX	white	Alive	NA	471	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-UL-AAZ6	female	73.9	Stage IIA	T2	N0	MX	black or african american	Alive	NA	518	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CL	female	37.1	Stage IIIA	T3	N2a	M0	black or african american	Alive	NA	3015	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A6R8	female	46.1	Stage IIA	T2	N0	M0	black or african american	Alive	NA	293	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AC-A23E	female	50.7	Stage IIB	T2	N1	MX	white	Alive	NA	698	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AC-A3HN	female	87.8	Stage IIB	T2	N1a	MX	white	Alive	NA	496	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A108	female	64.4	Stage IIIA	T2	N2a	M0	white	Alive	NA	837	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-3C-AALK	female	52.2	Stage IA	T1c	N0 (i+)	M0	black or african american	Alive	NA	1448	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A0J9	female	62	Stage IIIC	T2	N3	M0	white	Alive	NA	1613	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-E2-A1IJ	female	57.4	Stage I	T1c	N0	M0	white	Alive	NA	865	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-BH-A0B4	male	65.7	Stage IIIA	T2	N2	M0	white	Alive	NA	1191	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0B6	female	47.5	Stage I	T1c	N0	M0	white	Alive	NA	2483	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E9-A54Y	female	63.1	Stage IIIA	T2	N2	M0	white	Alive	NA	725	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1L6	female	44.9	Stage IIA	T1c	N1mi	M0	white	Alive	NA	1648	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1J5	female	59	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	477	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-EW-A6S9	female	34.9	Stage IIA	T1c	N1	M0	black or african american	Alive	NA	463	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AC-A6IV	female	48	Stage IIB	T2	N1	MX	white	Alive	NA	568	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A8-A07J	female	35.5	Stage IIB	T2	N1a	M0	not reported	Alive	NA	365	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A06X	female	77.6	Stage IIB	T3	N0	M0	not reported	Dead	943	943	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A0YI	female	62.9	Stage I	T1c	N0 (i+)	M0	white	Alive	NA	1505	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A12T	female	NA	Stage IIA	T2	N0	M0	asian	Alive	NA	0	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XA	female	64	Stage IA	T1c	N0	M0	white	Alive	NA	839	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A1IF	female	74.9	Stage I	T1c	N0	M0	white	Alive	NA	1138	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A24S	female	61.8	Stage I	T1	N0	M0	white	Alive	NA	2976	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A408	female	55	Stage IIIC	T2	N3a	M0	black or african american	Alive	NA	2072	Positive	Positive	Equivocal	Mixed Histology (please specify)
+TCGA-AC-A6IX	female	49.2	Stage IIIC	T2	N3a	MX	white	Alive	NA	373	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AR-A24W	female	55.1	Stage IIB	T2	N1	M0	white	Alive	NA	1550	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FS	female	55.7	Stage IA	T1c	N0	M0	white	Alive	NA	210	Positive	Negative	Positive	Infiltrating Lobular Carcinoma
+TCGA-AR-A0TY	female	54.3	Stage IIA	T2	N0	M0	white	Dead	1699	1699	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1PG	female	53.3	Stage IIB	T2	N1a	MX	white	Alive	NA	1051	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A7-A3J0	female	62.1	Stage IIA	T2	N0	M0	white	Alive	NA	313	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-E2-A1BD	female	53.7	Stage IIA	T2	N0	M0	white	Alive	NA	1133	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-OL-A5D8	female	40.7	Stage IIB	T3	N0	MX	black or african american	Alive	NA	973	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E2-A10E	female	64.8	Stage IIA	T1c	N1a	M0	white	Alive	NA	865	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A08H	female	66.1	Stage IIA	T2	N0	M0	not reported	Alive	NA	0	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-C8-A1HG	female	NA	Stage IIA	T2	N0	M0	asian	Alive	NA	345	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JS	female	77.1	Stage IA	T1c	N0	M0	white	Alive	NA	371	Positive	Positive	Negative	Other, specify
+TCGA-E2-A15G	female	76.7	Stage IIA	T2	N0	M0	white	Alive	NA	554	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-BH-A0HW	female	62.9	Stage IA	T1c	N0 (i-)	M0	asian	Alive	NA	1561	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A25E	female	34.5	Stage IIIA	T2	N2a	M0	black or african american	Alive	NA	3204	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A08C	female	65.8	Stage IIA	T2	N0	M0	not reported	Alive	NA	881	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A25C	female	50.7	Stage IIB	T2	N1a	M0	white	Alive	NA	523	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-GM-A2DN	female	58.3	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	3091	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AN	female	46.5	Stage IIA	T2	N0	M0	white	Alive	NA	2920	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08O	female	45.7	Stage IV	T2	N3a	M1	not reported	Alive	NA	943	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09W	female	70.3	Stage IIIB	T2	N3	M0	not reported	Alive	NA	30	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1LA	female	59.6	Stage IIA	T1c	N1a	M0	not reported	Alive	NA	748	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A7-A13E	female	62.1	Stage IIB	T2	N1	MX	white	Dead	614	614	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-EW-A1OZ	female	56.6	Stage IIA	T2	N0 (i-)	M0	black or african american	Alive	NA	1229	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DZ	female	43.8	Stage IIB	T2	N1a	M0	white	Alive	NA	495	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A24X	female	52.1	Stage IIA	T2	N0	M0	white	Alive	NA	3004	Positive	Positive	Equivocal	Mixed Histology (please specify)
+TCGA-S3-AA14	female	47.5	Stage I	T1	N0 (i+)	cM0 (i+)	black or african american	Alive	NA	529	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-S3-AA0Z	female	63.8	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	629	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A10F	female	47.2	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	878	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A7-A2KD	female	53.6	Stage IIIA	T2	N2a	MX	black or african american	Alive	NA	679	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E9-A3X8	female	48.2	Stage IIB	T2	N1	M0	white	Alive	NA	926	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-D8-A73U	female	88.2	Stage IIA	T2	N0	M0	white	Alive	NA	492	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A0IG	female	50.5	Stage IIB	T2	N1b	M0	white	Dead	4456	4456	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-EW-A6SC	female	60	Stage IIA	T2	N0	M0	black or african american	Alive	NA	952	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-LD-A74U	female	79.3	Stage IIIC	T3	N3a	M0	white	Alive	NA	402	Positive	Negative	Negative	Other, specify
+TCGA-E9-A22B	female	71.9	Stage IA	T1c	N0	M0	white	Alive	NA	1167	Positive	Negative	Negative	Mixed Histology (please specify)
+TCGA-BH-A1EV	female	45.2	Stage IIIA	T3	N1b	M0	white	Dead	365	365	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A0E1	female	52.5	Stage IIB	T2	N1	M0	white	Alive	NA	477	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-XX-A899	female	46.6	Stage IIIA	T1c	N2a	MX	white	Alive	NA	467	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A3TN	female	75.1	Stage IIB	T3	N0	MX	white	Alive	NA	456	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-EW-A1PF	female	50.3	Stage IA	T1c	N0	M0	white	Alive	NA	439	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BA	female	51.6	Stage IIIC	T3	N3a	M0	white	Alive	NA	1132	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-B6-A0RI	female	44.2	Stage IIIB	T4b	N1b	M0	white	Alive	NA	7126	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AR-A24N	female	54.7	Stage I	T1	N0	M0	white	Alive	NA	3035	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A3DX	female	43.7	Stage IIIC	T2	N3	M0	white	Alive	NA	1325	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AC-A3W6	female	90	Stage IIIA	T3	N1	MX	white	Alive	NA	0	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A425	female	70.3	Stage IIIC	T3	N3a	MX	white	Alive	NA	447	Positive	Positive	Indeterminate	Infiltrating Lobular Carcinoma
+TCGA-E2-A15C	female	61.8	Stage I	T1c	N0	M0	white	Alive	NA	694	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-LD-A7W6	female	55	Stage IIB	T2	N1a	M0	white	Alive	NA	404	Positive	Positive	Negative	Other, specify
+TCGA-D8-A1J9	female	49	Stage IA	T1c	N0	M0	white	Alive	NA	532	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-E2-A1B4	female	74.6	Stage IIIA	T1c	N2a	M0	white	Dead	1004	1004	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A423	female	75.6	Stage IIA	T2	N0	MX	white	Alive	NA	533	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A27T	female	53.6	Stage IIIC	T2	N3a	M0	white	Alive	NA	398	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AO-A03T	female	42.5	Stage IIB	T2	N1a	M0	white	Alive	NA	2124	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0E9	female	53.2	Stage IIB	T2	N1a	M0	white	Alive	NA	2489	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A2L8	female	45.6	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	612	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0YH	female	53.7	Stage IIIA	T2	N2a	M0	white	Alive	NA	659	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FT	female	63.8	Stage IIB	T2	N1	M0	white	Alive	NA	214	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A03V	female	41.8	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1351	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AH	female	52	Stage IIB	T2	N1	M0	white	Alive	NA	3807	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1J3	female	61.1	Stage IA	T1c	N0	M0	white	Alive	NA	504	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AN-A0AS	female	70.2	Stage IIIA	T2	N2	M0	white	Alive	NA	10	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0X7	female	62.2	Stage X	T1c	NX	MX	white	Dead	1781	1781	Positive	Positive	[Not Evaluated]	Mixed Histology (please specify)
+TCGA-D8-A141	female	40	NA	T1c	N1	M0	white	Alive	NA	626	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A4RY	female	47	Stage IIIC	T3	N3a	M0	white	Alive	NA	648	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-OL-A5S0	female	66.1	Stage IIB	T2	N1a	MX	black or african american	Alive	NA	620	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AC-A8OR	female	75.6	Stage IA	T1c	N0 (i-)	MX	white	Alive	NA	40	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A0CK	female	60.5	Stage IIIA	T3	N2a	M0	white	Alive	NA	4159	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A56Z	female	69.2	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	252	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-B6-A0RV	female	42.5	Stage IIIA	T3	N2	M0	white	Alive	NA	5156	Positive	Positive	[Not Evaluated]	Mixed Histology (please specify)
+TCGA-BH-A0C7	female	48.9	Stage IIB	T2	N1mi	M0	white	Alive	NA	2767	Positive	Negative	[Not Available]	Infiltrating Ductal Carcinoma
+TCGA-E2-A570	female	47.8	Stage IB	T1c	N1mi	M0	black or african american	Alive	NA	931	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0AY	female	62.2	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	777	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09N	female	57.5	Stage IIIC	T2	N3a	M0	not reported	Alive	NA	31	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A09D	female	47.7	Stage IIB	T2	N1	M0	not reported	Alive	NA	1522	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0T5	female	39.7	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	531	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1J8	female	77.9	Stage IIB	T2	N1a	M0	white	Alive	NA	431	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A133	female	65.5	Stage IIIA	T3	N1	M0	white	Alive	NA	0	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-EW-A1IY	female	38.7	Stage I	T1c	N0	MX	asian	Alive	NA	258	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TV	female	66.5	Stage IIA	T2	N0	M0	not reported	Alive	NA	2288	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-D8-A4Z1	female	68.7	Stage IA	T1c	N0	M0	white	Alive	NA	659	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-OL-A5RU	female	63.3	Stage IIA	T1c	N1	MX	black or african american	Alive	NA	1219	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E9-A1N5	female	45.8	Stage IIB	T2	N1	M0	white	Alive	NA	1120	Positive	Positive	Positive	Mixed Histology (please specify)
+TCGA-S3-AA17	female	64.7	Stage IIB	T2	N1mi	cM0 (i+)	black or african american	Alive	NA	424	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A3EH	female	79.4	Stage IIIC	T3	N3	M0	white	Dead	197	197	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A40B	female	76.1	Stage I	T1b	N0 (i-)	M0	white	Alive	NA	3152	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0HO	female	48.5	Stage IIA	T1c	N1a	M0	white	Alive	NA	76	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A049	female	62.2	Stage IIA	T2	N0	M0	white	Alive	NA	19	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CP	female	60.6	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	2813	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-C8-A1HM	female	74.1	Stage IIA	T2	N0	M0	asian	Alive	NA	375	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BC	female	60.1	Stage IIIC	T2	N3	M0	white	Alive	NA	974	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08L	female	89.9	Stage IIIA	T3	N2a	M0	not reported	Dead	30	30	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A14Q	female	50.7	Stage IIB	T2	N1mi	M0	white	Alive	NA	1163	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0H5	female	45.8	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1620	Positive	Positive	[Not Available]	Infiltrating Ductal Carcinoma
+TCGA-PE-A5DE	female	41.7	Stage IIA	T2	N0	M0	white	Alive	NA	2645	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-LQ-A4E4	female	73.6	Stage IIIA	T3	N1a	MX	white	Alive	NA	849	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-BH-A1FN	female	34.3	Stage IIA	T2	N0	M0	white	Dead	2192	2192	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BO	female	54.1	Stage I	T1b	N0	M0	white	Alive	NA	2197	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BJ	female	41.1	Stage IIB	T2	N1a	M0	white	Alive	NA	660	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-GM-A2DC	female	57.8	Stage IIA	T1c	N1a	M0	white	Alive	NA	2535	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E2-A153	female	51.7	Stage IIB	T2	N1a	M0	white	Alive	NA	707	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JN	female	80.3	Stage IIIC	T3	N3a	MX	white	Alive	NA	620	Positive	Positive	Indeterminate	Infiltrating Lobular Carcinoma
+TCGA-A2-A4S0	female	77.8	Stage IIA	T2	N0	M0	white	Alive	NA	706	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A0YJ	female	39.6	Stage IIIA	T3	N2a	M0	white	Alive	NA	566	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A10A	female	41.3	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	1229	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-OL-A5RX	female	51.9	Stage IA	T1c	N0	MX	black or african american	Alive	NA	878	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A42V	female	41.5	Stage IB	T1c	N1mi	M0	black or african american	Alive	NA	635	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A082	female	58.4	Stage IIB	T2	N1a	M0	not reported	Alive	NA	549	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JT	female	70.3	Stage IIA	T2	N0	M0	white	Alive	NA	405	Positive	Positive	Equivocal	Other, specify
+TCGA-OK-A5Q2	female	59	Stage II	T2	N1a	MX	not reported	Alive	NA	64	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A1XJ	female	76.6	Stage IIIA	T3	N1a	MX	white	Alive	NA	664	Positive	Positive	Positive	Other, specify
+TCGA-D8-A1XM	female	57.6	Stage IA	T1c	N0	M0	white	Alive	NA	538	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AK	female	70.7	Stage I	T1	N0	M0	white	Alive	NA	3159	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A8-A09G	female	79.4	Stage IIIC	T3	N3a	M0	not reported	Alive	NA	0	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CT	female	71.1	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	2289	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A09M	female	75.2	Stage IIIC	T2	N3a	M0	not reported	Alive	NA	1006	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BR	female	59.2	Stage I	T1c	N0	M0	white	Alive	NA	2330	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A1KP	female	77.3	Stage IIA	T1	N1	M0	white	Alive	NA	2953	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0SW	female	82.4	Stage IV	T2	N2	M1	white	Dead	1365	1365	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A8-A09Z	female	83.8	Stage IIB	T3	N0	M0	not reported	Alive	NA	0	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A2IU	female	62.7	Stage IIA	T2	N0	M0	white	Alive	NA	5176	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A2-A1FZ	female	63.1	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	683	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DS	female	71	Stage IIIA	T2	N2a	M0	white	Alive	NA	78	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JJ	female	54.1	Stage IIB	T2	N1a	M0	white	Alive	NA	1887	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0HP	female	65.4	Stage IIIA	T3	N2a	M0	white	Alive	NA	414	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0D3	female	42.5	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	1873	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A18F	female	50.9	Stage IIA	T2	N0	M0	white	Alive	NA	1001	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A0A6	female	64.1	Stage IIIC	T2	N3a	M0	not reported	Alive	NA	640	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A0X4	female	62.1	Stage IIB	T2	N1b	M0	white	Dead	860	860	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AO-A03R	female	57.3	Stage IIB	T2	N1a	M0	white	Alive	NA	2091	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A132	female	56	Stage IIB	T2	N1	M0	asian	Alive	NA	383	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-EW-A1J6	female	70.7	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	875	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DG	female	30.7	Stage IIA	T2	N0	M0	black or african american	Alive	NA	2041	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HU	female	52.6	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	392	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A0CJ	female	57.5	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	931	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A097	female	65	Stage IIB	T2	N1	M0	not reported	Alive	NA	365	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AC-A23H	female	90	Stage IIA	T2	NX	M0	white	Dead	0	0	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A1EX	female	67.2	Stage IIB	T2	N1b	M0	white	Dead	1508	1508	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-GM-A2DM	female	57.9	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	3226	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AQ-A04L	female	48.6	Stage IIA	T2	N0 (i-)	MX	white	Alive	NA	3957	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CY	female	63.6	Stage IIB	T2	N1	M0	white	Alive	NA	1673	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1EO	female	68.8	Stage IIA	T1c	N1	M0	white	Dead	2798	2798	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-BH-A18S	female	79.3	Stage I	T1c	N0	M0	white	Dead	2009	2009	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A1FV	female	74.7	Stage IIB	T3	N0 (i+)	M0	white	Alive	NA	714	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AN-A0XL	female	61.2	Stage IIA	T2	N0	M0	white	Alive	NA	163	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A3J1	female	63.5	Stage IA	T1c	N0	MX	white	Alive	NA	343	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A145	female	80.2	Stage IIA	T1c	N1a	M0	white	Alive	NA	410	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CS	female	73.4	Stage IV	T4b	N3a	M1	white	Dead	2348	2348	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A0AJ	female	79.8	Stage IIB	T3	N0	M0	white	Alive	NA	303	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DV	female	54.2	Stage IIIA	T2	N2a	M0	white	Alive	NA	2064	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1Y1	female	80.7	Stage IIIA	T3	N1a	MX	white	Dead	302	302	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LD-A66U	female	44.1	Stage IIB	T2	N1mi	MX	white	Alive	NA	646	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A3QQ	female	54	Stage IA	T1c	N0 (i-)	MX	white	Alive	NA	734	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AR-A1AO	female	47.5	Stage IIA	T1	N1	M0	white	Alive	NA	2618	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AQ-A54O	male	51.2	Stage IIA	T2	N0	M0	black or african american	Alive	NA	1001	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A4S3	female	59.6	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	666	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A14O	female	76.2	Stage IIIA	T3	N1a	M0	white	Alive	NA	1359	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0EU	female	79.8	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	1043	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1P0	female	55	Stage IIB	T2	N1b	MX	white	Alive	NA	1251	Positive	Negative	Negative	Other, specify
+TCGA-E9-A295	female	71.1	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	375	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-C8-A26W	female	58.6	Stage IIB	T2	N1	M0	asian	Alive	NA	381	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A079	female	69.3	Stage IIIB	T4b	N3	M0	not reported	Alive	NA	274	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A40C	female	51.6	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	2164	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0CW	female	67.2	Stage IIB	T2	N1a	M0	white	Alive	NA	3283	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A09R	female	82.7	Stage IIB	T2	N1	M0	not reported	Alive	NA	273	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A3YJ	female	66.9	Stage IIA	T2	N0 (i-)	MX	white	Alive	NA	754	Positive	Positive	[Not Available]	Other, specify
+TCGA-C8-A26Z	female	NA	Stage IIA	T2	N0	M0	asian	Alive	NA	470	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A24R	female	45.6	Stage IIIA	T1	N2	M0	white	Alive	NA	3430	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A7T0	female	70.8	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	376	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-GM-A3NY	female	72.9	Stage IIB	T2	N1a	M0	white	Alive	NA	1162	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A1JB	female	54.3	Stage IIB	T2	N1a	M0	white	Alive	NA	1688	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DL	female	64.7	Stage IIA	T2	N0	M0	white	Alive	NA	2381	Positive	Negative	Negative	Other, specify
+TCGA-A7-A5ZX	female	48.4	Stage IIIC	T2	N3a	M0	white	Alive	NA	336	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-JL-A3YX	female	NA	Stage IIA	T2	N0	M0	asian	Alive	NA	352	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-OL-A66H	female	74.7	Stage IB	T1c	N1mi	MX	black or african american	Alive	NA	812	Positive	Positive	[Not Evaluated]	Mucinous Carcinoma
+TCGA-D8-A3Z5	female	54.3	Stage IIIC	T2	N3a	M0	white	Alive	NA	1015	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-OL-A5RZ	female	57.6	Stage IA	T1b	N0	MX	black or african american	Alive	NA	679	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A8-A075	female	42.1	Stage IIB	T2	N1a	M0	not reported	Alive	NA	518	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FM	female	44.6	Stage IIIA	T2	N2	M0	white	Dead	1388	1388	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0C3	female	47.1	Stage I	T1c	N0	M0	white	Alive	NA	2709	Positive	Negative	Negative	Mixed Histology (please specify)
+TCGA-E2-A15M	female	66.4	Stage IIA	T2	N0	M0	white	Dead	336	336	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A9RU	female	90	Stage IIIC	T2	N3a	MX	black or african american	Alive	NA	0	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-EW-A1IW	female	80.8	Stage IIB	T2	N1a	MX	white	Alive	NA	371	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-A2-A0EN	female	70.6	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	4088	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A1L9	female	40.7	Stage IIA	T1c	N1mi	M0	white	Alive	NA	598	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1Y0	female	65.9	Stage IIIA	T1c	N2a	MX	white	Alive	NA	472	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A14T	female	52.7	Stage IIA	T2	N0	M0	white	Alive	NA	2311	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FW	female	67.6	Stage IIIA	T2	N2	M0	white	Alive	NA	11	Positive	Indeterminate	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1X7	female	40.7	Stage IIA	T2	N0	MX	white	Alive	NA	509	Positive	Positive	Negative	Other, specify
+TCGA-AO-A0J7	female	72	Stage IIB	T2	N1	M0	white	Alive	NA	618	Positive	Positive	Negative	Other, specify
+TCGA-AR-A1AP	female	80.5	Stage I	T1	N0	M0	white	Alive	NA	2856	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-D8-A1X9	female	66.9	Stage IIB	T2	N1a	M0	white	Alive	NA	727	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CU	female	73.4	Stage IIA	T2	N0 (i+)	M0	white	Dead	158	158	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A0A1	female	84.2	Stage IIA	T2	N0	M0	not reported	Alive	NA	365	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-EW-A1OX	female	43.4	Stage IIA	T2	N0	MX	white	Alive	NA	911	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A8-A094	female	75.9	Stage IIA	T2	N0	M0	not reported	Alive	NA	0	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A254	female	50	Stage IIIA	T2	N2	M0	white	Alive	NA	2605	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A27L	female	49.3	Stage IIIA	T1c	N2a	M0	white	Alive	NA	499	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08A	female	89.7	Stage I	T1c	N0	M0	not reported	Alive	NA	30	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AQ-A1H3	female	49.8	Stage IIIC	T2	N3a	MX	white	Alive	NA	989	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A125	female	72.5	Stage IIA	T2	N0 (i-)	M0	black or african american	Alive	NA	3456	Positive	Positive	Negative	Other, specify
+TCGA-BH-A1FR	female	73.1	Stage IIIB	T4b	N1a	M0	white	Dead	1642	1642	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-C8-A12O	female	50.7	Stage IIA	T2	N0 (i-)	M0	asian	Alive	NA	385	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A13H	female	62	Stage IIB	T2	N1a	MX	white	Alive	NA	899	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-AC-A3W5	female	65.8	Stage IIA	T2	N0	MX	black or african american	Alive	NA	504	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A2-A0EM	female	73.5	Stage IA	T1	N0 (i-)	M0	white	Alive	NA	3094	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A1ET	female	55.9	Stage I	T1	N0	M0	white	Dead	2520	2520	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-OL-A5DA	female	61.4	Stage IIA	T2	N0	MX	white	Alive	NA	1783	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AN-A0FK	female	88.9	Stage IIIB	T4	N0	M0	white	Alive	NA	213	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A126	female	39.1	Stage IIA	T2	N0 (i-)	M0	asian	Alive	NA	3307	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HB	female	56	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	806	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DD	male	58.6	Stage IIB	T2	N1a	M0	white	Alive	NA	2486	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A7-A26H	female	72.3	Stage IIA	T1	N1a	M0	white	Alive	NA	724	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A1IK	female	71.3	Stage IIA	T1c	N1mi	M0	white	Alive	NA	1800	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JI	female	55	Stage IIA	T1c	N1a	MX	white	Alive	NA	577	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0GY	female	67.1	Stage IIA	T2	N1	M0	white	Alive	NA	923	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SM	male	77.2	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	242	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A3Z6	female	56.5	Stage IIIC	T3	N3a	M0	white	Alive	NA	563	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0DE	female	62	Stage IIA	T2	N0	M0	white	Alive	NA	2372	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0RP	female	73.8	NA	T2	N1b	M0	white	Dead	3126	3126	Positive	Positive	[Not Evaluated]	Mixed Histology (please specify)
+TCGA-WT-AB44	female	NA	Stage IA	T1c	N0 (i-)	MX	white	Alive	NA	883	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A8G0	female	54.7	Stage IIB	T2	N1a	M0	white	Alive	NA	662	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0T7	female	51.4	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	631	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A8FY	female	87.4	Stage IA	T1c	N0 (i+)	M0	white	Dead	295	295	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AR-A0TQ	female	27	Stage IIIA	T3	N1	M0	white	Alive	NA	2991	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JM	female	40.1	Stage IIB	T2	N1	M0	not reported	Alive	NA	2184	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AC-A3QP	female	79.7	Stage IIB	T2	N1mi	MX	white	Alive	NA	675	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-C8-A273	female	NA	Stage IIB	T2	N1	M0	asian	Alive	NA	513	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XF	female	46	Stage IIA	T2	N0	M0	white	Alive	NA	463	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A07P	female	68.3	Stage IIB	T2	N1	M0	not reported	Alive	NA	334	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JG	female	49.3	Stage IIIA	T2	N2a	M0	white	Alive	NA	798	Positive	Positive	Negative	Other, specify
+TCGA-AR-A251	female	51.4	Stage IIIA	T2	N2	M0	white	Alive	NA	3030	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AO-A12G	female	75.9	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	1639	Positive	Positive	Positive	Other, specify
+TCGA-BH-A0DH	female	64	Stage IIB	T2	N1a	M0	white	Alive	NA	1156	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HI	female	78.4	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	620	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A401	female	47.7	Stage IIA	T1c	N1a	M0	black or african american	Alive	NA	2596	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A22D	female	38.6	Stage IIA	T2	N0	M0	white	Alive	NA	1248	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-MS-A51U	female	44.4	Stage IIB	T2	N1	M0	white	Alive	NA	681	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-LL-A6FQ	female	77.7	Stage IIIA	T2	N2a	MX	black or african american	Alive	NA	80	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A8F5	female	61.7	Stage IIA	T2	N0 (i-)	MX	black or african american	Alive	NA	596	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A50Y	female	84.7	Stage IIA	T2	N0	MX	white	Alive	NA	762	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A2-A0YK	female	61.9	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	588	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-OL-A66J	female	80.3	Stage I	T1c	N0	MX	white	Alive	NA	1996	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A8-A092	female	48.8	Stage IIIA	T2	N2a	M0	not reported	Alive	NA	942	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-HN-A2OB	female	45.6	Stage IIB	T2	N1	M0	not reported	Dead	1900	1900	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A5XU	female	74.4	Stage IIB	T3	N0 (i-)	MX	black or african american	Alive	NA	455	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0AU	female	45.7	Stage IIA	T2	N0	M0	white	Alive	NA	1914	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A0J3	female	67.1	Stage IIB	T2	N1b	M0	white	Alive	NA	651	Positive	Positive	Equivocal	Other, specify
+TCGA-AR-A1AU	female	39.9	Stage IIIA	T2	N2	M0	white	Alive	NA	2868	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-GM-A4E0	female	67.9	Stage IIIC	T3	N3a	M0	white	Alive	NA	2191	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-C8-A12N	female	58.7	Stage IIA	T2	N0 (i-)	M0	asian	Alive	NA	358	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A12U	female	46.7	Stage IIB	T2	N1	M0	asian	Alive	NA	385	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LQ	female	59.9	Stage IIB	T3	N0	M0	white	Alive	NA	1233	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A10B	female	67.3	Stage IIB	T2	N1a	M0	white	Alive	NA	1141	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A2P6	female	77.8	Stage IIB	T2	N1	M0	not reported	Alive	NA	1051	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-BH-A0HY	female	60.7	Stage I	T1c	N0	M0	white	Alive	NA	1545	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-S3-A6ZF	female	64.8	Stage IIA	T2	N0	M0	black or african american	Alive	NA	572	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A086	female	59.5	Stage IIA	T1c	N1a	M0	not reported	Alive	NA	396	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A041	female	29.6	Stage IIB	T2	N1a	M0	white	Alive	NA	7	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-AQ-A04H	female	61.7	Stage IIIA	T2	N2a	MX	white	Alive	NA	754	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SF	female	54	Stage IIA	T2	N0	M0	white	Alive	NA	1463	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A4S1	female	66.7	Stage IIA	T2	N0	M0	white	Alive	NA	820	Positive	Negative	Negative	Metaplastic Carcinoma
+TCGA-EW-A1PA	female	59.8	Stage IIB	T2	N1a	M0	white	Alive	NA	575	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08T	female	64.5	Stage IV	T2	N1a	M1	not reported	Dead	3409	3409	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E2-A154	female	68.4	Stage I	T1c	N0	M0	white	Alive	NA	591	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A227	female	42.7	Stage IIB	T2	N1	M0	white	Alive	NA	975	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-5L-AAT0	female	42.1	Stage IIA	T2	N0	M0	white	Alive	NA	1477	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A18J	female	56.6	Stage IV	T4b	N2	M1	white	Dead	612	612	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0E2	female	49.7	Stage IIIA	T2	N2a	M0	black or african american	Alive	NA	435	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-GM-A2D9	female	69.8	Stage I	T1c	N0 (i-)	M0	white	Dead	1812	1812	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JE	female	62.1	Stage IIA	T1c	N1a	M0	white	Alive	NA	575	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A03L	female	34.1	Stage IIIA	T3	N2	M0	asian	Alive	NA	2442	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DQ	female	42.5	Stage IIB	T2	N1	M0	white	Alive	NA	98	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A1HL	female	NA	Stage IIIA	T3	N1	M0	asian	Alive	NA	317	Positive	Negative	Equivocal	Other, specify
+TCGA-BH-A5IZ	female	51.8	Stage IIB	T2	N1a	cM0 (i+)	black or african american	Alive	NA	567	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A54X	female	85.3	Stage IA	T1b	N0 (i-)	M0	white	Alive	NA	727	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-AN-A0XT	female	54.2	Stage IIIA	T2	N2	M0	white	Alive	NA	10	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A73Z	female	55.1	Stage IV	T1c	NX	M1	black or african american	Dead	227	227	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JM	female	59.1	Stage IIB	T2	N1a	M0	white	Alive	NA	590	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JB	female	50.8	Stage IIIA	T3	N1a	M0	white	Alive	NA	1542	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A2B8	female	84.9	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	677	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0YC	female	59.4	Stage IIB	T2	N1mi	M0	white	Alive	NA	990	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-JL-A3YW	female	NA	Stage IIB	T2	N1	M0	asian	Alive	NA	360	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-A2-A0T3	female	37.5	Stage IB	T1c	N1mi	M0	white	Alive	NA	1516	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A62Y	female	79.1	Stage IIB	T2	N1	MX	white	Alive	NA	530	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A1EY	female	79.2	Stage IIA	T2	N0	M0	white	Dead	538	538	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0W4	female	46.3	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	759	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A5QN	female	68.7	Stage IIIC	T2	N3	M0	white	Alive	NA	1013	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-E2-A1IU	female	61	Stage IA	T1c	N0 (mol+)	M0	white	Alive	NA	337	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0YD	female	63	Stage IIB	T3	N0 (i+)	M0	white	Alive	NA	769	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A7-A13F	female	44.8	Stage IIIA	T3	N1a	M0	white	Alive	NA	765	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HK	female	81.5	Stage IIB	T2	N1	M0	white	Alive	NA	178	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A25D	female	90	Stage IIIC	T2	N3a	M0	white	Alive	NA	0	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A201	female	64.1	Stage IA	T1	N0	M0	white	Alive	NA	856	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A085	male	44.8	Stage IIB	T2	N1a	M0	not reported	Alive	NA	1124	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A5QP	female	54.2	Stage IIB	T2	N1	M0	white	Alive	NA	1185	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-BH-A0W3	female	58.5	Stage IIA	T1c	N1a	M0	white	Alive	NA	728	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A24V	female	52.1	Stage IIB	T2	N1	M0	white	Alive	NA	3203	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A1NE	female	28.9	Stage IIB	T2	N1	M0	white	Alive	NA	1088	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A23C	female	62.3	Stage IIB	T2	N1	MX	white	Alive	NA	585	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AN-A0XV	female	67.8	Stage IIIA	T2	N2	M0	white	Alive	NA	162	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A1FX	female	61.2	Stage IIIA	T3	N2a	M0	white	Alive	NA	1847	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LO	female	46.8	Stage IIB	T2	N1	M0	white	Alive	NA	1198	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-D8-A27V	female	62.9	Stage IIA	T2	N0	M0	white	Alive	NA	381	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0YF	female	67.5	Stage I	T1b	N0 (i+)	M0	black or african american	Alive	NA	1535	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0H6	female	82.5	Stage I	T1b	NX	M0	white	Alive	NA	747	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-OL-A66L	female	71.7	Stage IA	T1c	N0	MX	black or african american	Alive	NA	1301	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JU	female	51.3	Stage IA	T1c	N0	M0	white	Alive	NA	447	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A0AD	female	83.2	Stage I	T1c	N0	M0	not reported	Alive	NA	1157	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-PE-A5DD	female	64.8	Stage IIA	T2	N0	M0	asian	Alive	NA	1953	Positive	Negative	Positive	Infiltrating Lobular Carcinoma
+TCGA-E2-A105	female	79	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1308	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0T4	female	62.6	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	624	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-Z7-A8R6	female	46.4	Stage I	T1c	N0	M0	white	Alive	NA	3256	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A0YL	female	48.5	Stage IIIA	T3	N2a	M0	white	Alive	NA	1474	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A73X	female	53.7	Stage IIA	T2	N0	M0	white	Alive	NA	767	Positive	Positive	Negative	Other, specify
+TCGA-AO-A0JA	female	36.4	Stage IIIC	T2	N3	M0	black or african american	Alive	NA	655	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A26V	female	47.8	Stage IIIA	T3	N2	M0	asian	Alive	NA	616	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A27A	female	48.7	Stage IIB	T2	N1	M0	asian	Alive	NA	747	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1PE	female	56.7	Stage IIA	T1c	N1a	M0	white	Alive	NA	320	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A5YM	female	88.9	Stage IIIB	T4b	NX	M0	black or african american	Alive	NA	394	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A3OD	female	69	Stage IIB	T2	N1mi	MX	white	Alive	NA	451	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A0DB	female	56.3	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1007	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TR	female	69	Stage IIB	T2	N1	M0	white	Dead	160	160	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FN	female	62	Stage IA	T1c	N0	M0	white	Alive	NA	218	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-B6-A0RH	female	51.4	Stage IIA	T2	N0 (i-)	M0	black or african american	Dead	6456	6456	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0AW	female	56	Stage IIA	T1c	N1a	M0	white	Alive	NA	622	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A18M	female	39.8	Stage IIIA	T3	N1	M0	white	Dead	2207	2207	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A0C1	female	61.3	Stage IIIA	T3	N2a	M0	white	Dead	1411	1411	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-C8-A3M8	female	68.1	Stage IA	T1c	N0	M0	asian	Alive	NA	394	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-D8-A27P	female	64.5	Stage IA	T1c	N0	M0	white	Alive	NA	49	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0RQ	female	68.5	Stage IIB	T3	N0 (i-)	M0	white	Dead	4267	4267	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-GM-A2DO	female	54.3	Stage I	T1c	N0 (i-)	M0	black or african american	Alive	NA	2596	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A28O	female	50.7	Stage IIIC	T3a	N3	M0	white	Alive	NA	1120	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-C8-A274	female	63.9	Stage IIA	T2	N0	M0	asian	Alive	NA	508	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LL	female	70.5	Stage IIB	T3	N0	M0	white	Alive	NA	2012	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-AN-A0XW	female	36.2	Stage IIIA	T2	N2	M0	white	Alive	NA	170	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-3C-AAAU	female	55.3	Stage X	TX	NX	MX	white	Alive	NA	4047	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-LL-A9Q3	female	69.8	Stage IIIC	T3	N3a	MX	white	Alive	NA	532	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-A8-A06P	female	63	Stage IIIA	T1c	N2a	M0	not reported	Alive	NA	396	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AQ-A7U7	female	55.4	Stage IIIA	T2	N2a	M0	white	Dead	584	584	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1IO	female	37.4	Stage I	T1c	N0	M0	white	Alive	NA	1855	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XL	female	34.7	Stage IIB	T2	N1a	MX	white	Alive	NA	606	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SN	female	50.4	Stage IIA	T1c	N1	MX	white	Alive	NA	1196	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LE	female	69.8	Stage I	T1	N0	M0	white	Alive	NA	5062	Positive	Negative	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-B6-A0RM	female	57.6	Stage X	TX	NX	MX	black or african american	Dead	2373	2373	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E2-A15T	female	65.9	Stage IIA	T2	N0	M0	white	Alive	NA	1563	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BZ	female	59.8	Stage IIIA	T3	N1a	M0	white	Alive	NA	2255	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A14V	female	53.8	Stage IIB	T2	N1	M0	white	Alive	NA	1042	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FF	female	32.7	Stage IA	T1b	N0	M0	white	Alive	NA	172	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XD	female	37	Stage IIIA	T1c	N2a	M0	white	Alive	NA	522	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AS	female	54.8	Stage IIB	T2	N1	M0	asian	Alive	NA	1150	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A27W	female	55.2	Stage IIIB	T4b	N0	M0	white	Alive	NA	373	Positive	Positive	Equivocal	Mucinous Carcinoma
+TCGA-AR-A24K	female	46.4	Stage IIA	T2	N0	M0	white	Alive	NA	1548	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A08S	female	71.2	Stage IIA	T1c	N1	M0	not reported	Alive	NA	1004	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A209	female	77.8	Stage I	T1c	N0	M0	black or african american	Dead	3959	3959	Positive	Positive	[Not Evaluated]	Medullary Carcinoma
+TCGA-A8-A09C	female	69.4	Stage X	T2	N0	MX	not reported	Alive	NA	31	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A1KS	female	69.1	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	350	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A1-A0SG	female	61.3	Stage IIB	T2	N1a	M0	white	Alive	NA	434	Positive	Positive	Negative	Other, specify
+TCGA-AO-A12H	female	69.9	Stage IIA	T2	N0 (i-)	M0	black or african american	Alive	NA	1234	Positive	Positive	Negative	Other, specify
+TCGA-B6-A0WY	female	40.5	Stage IIIA	T3	N1b	M0	white	Dead	3461	3461	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A2-A0SY	female	62.8	Stage IIIA	T3	N1	M0	white	Alive	NA	1347	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A2-A0CV	female	41.9	Stage IIB	T2	N1a	M0	asian	Alive	NA	3011	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A12C	female	42.4	Stage IIB	T2	N1a	M0	white	Alive	NA	2372	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A08G	female	41	Stage IIA	T2	N0	M0	not reported	Alive	NA	607	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A2-A0ER	female	63	Stage IB	T1c	N1mi	M0	white	Alive	NA	2263	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AO-A12A	female	47.7	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	3112	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A0CG	female	78.3	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1043	Positive	Negative	Negative	Mixed Histology (please specify)
+TCGA-4H-AAAK	female	50.3	Stage IIIA	T2	N2a	M0	white	Alive	NA	348	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-D8-A1XS	male	48.5	Stage IIIC	T2	N3a	M0	white	Alive	NA	496	Positive	Positive	Positive	Other, specify
+TCGA-GI-A2C8	female	63.3	Stage IIIB	T4b	N0	MX	white	Alive	NA	225	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A1KC	female	67.9	Stage IIB	T2	N1	M0	white	Alive	NA	1326	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09K	female	68.3	Stage IIA	T1c	N1	M0	not reported	Alive	NA	912	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09I	female	84.1	Stage IIA	T2	N0	M0	not reported	Alive	NA	1371	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A07I	female	69.2	Stage IIIA	T2	N2a	M0	not reported	Alive	NA	426	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A0J5	female	48.8	Stage IV	T4	N1a	M1	white	Dead	792	792	Positive	Negative	Equivocal	Other, specify
+TCGA-C8-A1HO	female	34.8	Stage IIIC	T3	N3	M0	asian	Alive	NA	375	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A2FW	female	52.3	Stage IIA	T2	N0 (i-)	MX	white	Alive	NA	672	Positive	Positive	Negative	Other, specify
+TCGA-D8-A1XU	female	56.7	Stage IA	T1c	N0	M0	white	Alive	NA	395	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A8OP	female	72.7	Stage IA	T1c	N0 (i-)	MX	black or african american	Alive	NA	614	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-A8-A06Q	female	63.4	Stage IIIA	T3	N2	M0	not reported	Alive	NA	31	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JP	female	73.5	Stage IA	T1c	N0	M0	white	Alive	NA	639	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FD	female	71.2	Stage IIA	T2	N0	M0	white	Alive	NA	196	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A252	female	51	Stage I	T1	N0	M0	white	Alive	NA	2838	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0X5	female	61.3	Stage IIB	T2	N1b	M0	black or african american	Dead	2097	2097	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A8-A09T	female	68.7	NA	T1c	N0	MX	not reported	Alive	NA	579	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A0IP	female	74.1	Stage IA	T1c	N0 (i-)	M0	white	Dead	3926	3926	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AO-A03O	female	69.4	Stage IIA	T2	N0 (i-)	M0	black or african american	Dead	2483	2483	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A22A	female	74.7	Stage IIA	T2	N0	M0	white	Alive	NA	1189	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A08B	female	52.3	Stage IIA	T2	N0	M0	not reported	Alive	NA	1156	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-E9-A6HE	female	45.7	Stage IIIC	T3	N3	MX	white	Alive	NA	847	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A2-A25B	female	39.6	Stage IIB	T2	N1	M0	black or african american	Alive	NA	1291	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A4ZE	female	63.7	Stage IIB	T3	N0	M0	white	Alive	NA	890	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-A2-A0CR	female	55	Stage IIB	T3	N0	M0	asian	Alive	NA	3283	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A15L	female	65.3	Stage IIA	T2	N0	M0	black or african american	Alive	NA	626	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-B6-A0IA	female	51.3	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	8391	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-D8-A1Y2	female	71.2	Stage IIA	T2	N0	MX	white	Alive	NA	433	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-C8-A1HN	female	56.7	Stage IIA	T2	N0	M0	asian	Alive	NA	394	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A1B1	female	45.5	Stage IIB	T2	N1	M0	white	Alive	NA	2653	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A08J	female	52.7	Stage IV	T4b	N3	M1	not reported	Dead	1127	1127	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A138	female	54.9	Stage IIIA	T2	N2	M0	asian	Alive	NA	380	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-GM-A5PV	female	63.6	Stage IIB	T2	N1a	M0	white	Alive	NA	412	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-C8-A12M	female	70.7	Stage IIA	T2	N0 (i-)	M0	asian	Alive	NA	358	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0W7	female	49.3	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1363	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HN	female	67.7	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	516	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A2FK	female	45.5	Stage IIIC	T2	N3a	M0	white	Alive	NA	2650	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-BH-A0B5	female	40.8	Stage IIIA	T2	N2a	M0	white	Alive	NA	2136	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-GM-A2DK	female	58	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	2645	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A06N	female	66.5	Stage IIIB	T4b	N0	M0	not reported	Alive	NA	0	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1X6	female	80.1	Stage IIIA	T3	N2a	MX	white	Alive	NA	541	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A046	female	68.9	Stage IIA	T2	N0	M0	white	Alive	NA	10	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1IX	female	48.2	Stage IIA	T1b	N1a	MX	asian	Alive	NA	1208	Positive	Positive	Negative	Other, specify
+TCGA-AN-A0XP	female	69.3	Stage IIIA	T2	N2	M0	white	Alive	NA	9	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A03M	female	29.1	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1866	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AL	female	60.3	Stage IIIA	T3	N1	M0	white	Alive	NA	2971	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-B6-A0IC	female	90	Stage X	T2	NX	MX	white	Dead	0	0	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-BH-A1ES	female	36	Stage IIB	T2	N1a	M0	white	Dead	3462	3462	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DT	female	41.3	Stage IIA	T1c	N1a	M0	white	Alive	NA	2403	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A0A9	female	80.4	Stage IIA	T2	N0	M0	not reported	Alive	NA	822	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A12X	female	62.7	Stage IIB	T2	N1	M0	asian	Alive	NA	385	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-E2-A15A	female	45.9	Stage IIIC	T2	N3a	M0	white	Alive	NA	710	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-Z7-A8R5	female	61	Stage IIIA	T3	N1a	MX	white	Alive	NA	3287	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-C8-A8HQ	female	53.2	Stage IIB	T2	N1	M0	asian	Alive	NA	380	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A4S2	female	62.8	Stage IIIA	T3	N2	M0	white	Alive	NA	643	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A3TM	female	50.7	Stage IIIA	T3	N1mi	M0	white	Alive	NA	762	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-LL-A5YP	female	49.4	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	450	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A27E	female	66.6	Stage IA	T1c	N0	M0	white	Alive	NA	530	Positive	Positive	Negative	Other, specify
+TCGA-A7-A26J	female	49.1	Stage IIA	T2	N0	M0	white	Alive	NA	627	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XO	female	56.4	Stage IIB	T2	N1a	M0	white	Alive	NA	1682	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-C8-A12W	female	49.7	Stage IIIB	T4	N1	M0	asian	Alive	NA	385	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A26E	female	71.9	Stage IIIA	T3	N1a	MX	white	Alive	NA	954	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AR-A24O	female	43.7	Stage IIIA	T3	N2	M0	white	Alive	NA	3607	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-5L-AAT1	female	63.6	Stage IV	T2	N0	M1	white	Alive	NA	1471	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A8-A06T	female	75	Stage IIIA	T3	N1a	M0	not reported	Alive	NA	1614	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A06U	female	80.8	Stage IIB	T2	N1a	M0	not reported	Dead	883	883	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AO-A1KQ	male	84.5	Stage IIIB	T4	N1	M0	white	Alive	NA	1882	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A1R2	female	51.8	Stage IIIC	T2	N3	MX	white	Alive	NA	1063	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A18L	female	50.7	Stage IIIA	T3	N1mi	M0	white	Dead	811	811	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A1IG	female	45.9	Stage IIB	T2	N1mi	M0	white	Alive	NA	2140	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XV	female	84.4	Stage IIA	T2	N0	M0	white	Alive	NA	461	Positive	Positive	Equivocal	Mucinous Carcinoma
+TCGA-BH-A1FD	female	68.3	Stage I	T1c	N0	M0	white	Dead	1009	1009	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LM	female	49.4	Stage II	T1	N1	M0	white	Alive	NA	1935	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-D8-A27R	female	41.4	Stage IIIC	T2	N3a	M0	white	Alive	NA	307	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A07S	female	73.9	Stage IIA	T2	N0	M0	not reported	Alive	NA	243	Positive	Negative	Negative	Mixed Histology (please specify)
+TCGA-A2-A0CO	female	86	Stage IIB	T3	N0	M0	white	Dead	1468	1468	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0DI	female	63.9	Stage IIB	T2	N1a	M0	white	Alive	NA	912	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BS	female	55.8	Stage IIIA	T3	N1c	M0	white	Alive	NA	2612	Positive	Positive	[Not Available]	Infiltrating Ductal Carcinoma
+TCGA-E2-A15R	female	64.5	Stage IIA	T1c	N1a	M0	white	Alive	NA	1732	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0W5	female	77.5	Stage IIA	T1c	N1a	M0	white	Alive	NA	1288	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A24T	female	46.9	Stage IIIC	T3	N3	M0	white	Alive	NA	3202	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A1-A0SB	female	70.7	Stage I	T1c	N0	M0	white	Alive	NA	259	Positive	Negative	Negative	Other, specify
+TCGA-E2-A572	female	72.3	Stage IIIA	T2	N2	M0	black or african american	Alive	NA	1208	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-OL-A66K	female	72	Stage IIA	T2	N0	MX	white	Dead	1275	1275	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A8-A0A2	female	66.7	Stage IIA	T2	N0	M0	not reported	Alive	NA	579	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A8-A095	female	45.8	Stage I	T1c	N0	M0	not reported	Alive	NA	1277	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A3XW	female	42.9	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	1712	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0WT	female	61.2	Stage IIB	T2	N1	M0	white	Alive	NA	5739	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FB	female	60	Stage IIB	T2	N1b	M0	white	Dead	3669	3669	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1PC	female	66.9	Stage IIB	T3	N0 (i-)	MX	black or african american	Alive	NA	187	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1F8	female	90	Stage IIIB	T4b	N2	M0	white	Dead	1	1	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A1Y3	female	61.1	Stage IIIA	T2	N2a	MX	white	Alive	NA	430	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HL	female	57	Stage IIB	T2	N1a	M0	white	Alive	NA	72	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A8-A08P	female	70.1	Stage IIIA	T2	N2a	M0	not reported	Alive	NA	943	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-EW-A1J2	female	50.8	NA	T1c	N1mi	MX	black or african american	Alive	NA	403	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0H9	female	69.2	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1247	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-B6-A0IH	female	81.9	Stage IIIA	T3	N1b	M0	white	Dead	2965	2965	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-AC-A62X	female	72.9	Stage IIA	T2	N0	MX	black or african american	Alive	NA	417	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A8-A083	female	67.8	Stage IIB	T3	N0	M0	not reported	Alive	NA	0	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A424	female	51.6	Stage IIIA	T3	N1	MX	white	Alive	NA	715	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-E2-A15S	female	34.7	Stage IIB	T2	N1	M0	white	Alive	NA	428	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-B6-A0RO	female	71.9	Stage IIIB	T4	N1a	M0	white	Alive	NA	4929	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A7-A4SF	female	54.7	Stage IIA	T2	N0	M0	black or african american	Alive	NA	545	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A27I	female	58.4	Stage IIIA	T1c	N2a	M0	white	Alive	NA	439	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A15I	female	44.3	Stage IIA	T2	N0	M0	white	Alive	NA	1692	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0EV	female	80.2	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	968	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A18I	female	53.4	Stage IIA	T1c	N1a	cM0 (i+)	white	Alive	NA	1093	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A7-A13G	female	79.3	Stage IIA	T2	N0	MX	white	Alive	NA	718	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A3IY	female	71.3	Stage I	T1c	N0	M0	white	Alive	NA	345	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-BH-A0C0	female	63	Stage IIA	T1c	N1a	M0	white	Alive	NA	1270	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A4RW	female	49.4	Stage IIIC	T2	N3a	M0	white	Alive	NA	222	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A4SB	female	56.2	Stage IIIA	T3	N1mi	M0	white	Alive	NA	418	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AO-A03N	female	59.7	Stage IIB	T2	N1a	M0	white	Alive	NA	2031	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XR	female	56.1	Stage IIB	T2	N1a	M0	white	Alive	NA	482	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-OL-A5RY	female	52.6	Stage IIA	T1c	N1	MX	black or african american	Alive	NA	752	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JJ	female	54.7	Stage IIA	T2	N0	M0	white	Alive	NA	611	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A1NA	female	58.6	Stage IIA	T2	N0	M0	white	Alive	NA	1112	Positive	Positive	Positive	Mixed Histology (please specify)
+TCGA-B6-A1KI	female	63.1	Stage I	T1c	N0	M0	white	Alive	NA	2236	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-S3-AA11	female	67.9	Stage IIA	T2	N0	M0	black or african american	Alive	NA	421	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0EI	female	51.3	Stage IIA	T1c	N1a	M0	white	Alive	NA	1926	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-3C-AALJ	female	62.6	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	1474	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TW	female	50	Stage IIIA	T3	N1	M0	white	Alive	NA	3009	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A24M	female	38.7	Stage IIIA	T2	N2	M0	white	Alive	NA	3660	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-D8-A27G	female	75.3	Stage IIA	T2	N0	M0	white	Alive	NA	409	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E9-A1NF	female	60.2	Stage IIA	T2	N0	M0	white	Dead	1072	1072	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-E2-A1IN	female	60.8	Stage I	T1c	N0	M0	white	Alive	NA	675	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A14S	female	65.4	Stage I	T1c	N0	M0	white	Alive	NA	1009	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LJ	female	40.3	Stage IIIA	T3	N1	MX	white	Alive	NA	2632	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AR-A0U2	female	47.6	Stage IIIA	T2	N2	M0	white	Dead	2551	2551	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A3KD	female	47.6	Stage IIIA	T3	N1mi	M0	white	Alive	NA	1206	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-BH-A1F5	female	62.5	Stage IIA	T1c	N1a	M0	white	Dead	2712	2712	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A081	female	80.9	Stage IIA	T2	N0	M0	not reported	Alive	NA	0	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0YT	female	56.1	Stage IIIB	T4b	N2a	M0	white	Dead	723	723	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XC	female	85.5	Stage IIIB	T4b	N1a	M0	white	Dead	377	377	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A0EY	female	62.6	Stage IIB	T2	N1a	M0	white	Alive	NA	1925	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-EW-A3E8	female	60	Stage IIB	T3	N0	MX	white	Alive	NA	1035	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A0BV	female	78.6	Stage IIB	T2	N1a	M0	white	Alive	NA	1519	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A04X	female	34.6	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1686	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-GM-A3XG	female	46.4	Stage IIIA	T3	N1a	M0	white	Alive	NA	1330	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-BH-A18N	female	88.7	Stage IIA	T2	N1b	M0	white	Dead	468	468	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A5QM	female	62.4	Stage IIA	T2	N0	M0	white	Alive	NA	2231	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A10C	female	54.3	Stage IIB	T2	N1a	M0	white	Alive	NA	1220	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A04Y	female	53.5	Stage IIB	T2	N1mi	M0	white	Alive	NA	1099	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1F2	female	53.9	Stage IIIB	T4b	N1b	M0	white	Dead	959	959	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A42T	female	75.9	Stage IIA	T2	N0 (i+)	M0	black or african american	Dead	320	320	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AN-A0AM	female	56.7	Stage IIA	T2	N0	M0	white	Alive	NA	5	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A2FB	female	65.3	Stage IIA	T2	N0	MX	white	Alive	NA	1234	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-BH-A0H3	female	47	Stage I	T1c	N0	M0	white	Alive	NA	1928	Positive	Positive	[Not Available]	Infiltrating Ductal Carcinoma
+TCGA-AQ-A0Y5	female	70.6	Stage IIIA	T2	N2a	MX	white	Dead	172	172	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A7-A0CD	female	66.4	Stage I	T1	N0	M0	white	Alive	NA	1165	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-LL-A6FP	female	90	Stage IIA	T2	NX	MX	white	Alive	NA	0	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-BH-A0BD	female	47.3	Stage IIA	T1c	N1a	M0	white	Alive	NA	554	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A07G	female	65.5	Stage IIA	T1c	N1a	M0	not reported	Alive	NA	577	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A146	female	57.1	Stage IIA	T2	N0	MX	white	Alive	NA	643	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A1HI	female	NA	Stage IIIA	T2	N2	M0	asian	Alive	NA	343	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A07E	female	81.6	Stage X	T4b	N3a	MX	not reported	Alive	NA	608	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0B1	female	66.6	Stage IIB	T2	N1a	M0	white	Alive	NA	1148	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A24Q	female	49.5	Stage IIB	T3	N0	M0	white	Alive	NA	3172	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A155	female	58.4	Stage IIB	T2	N1a	M0	white	Alive	NA	640	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0SV	female	63.3	Stage IV	T2	N2a	M1	white	Dead	825	825	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HA	female	31.2	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1611	Positive	Positive	[Not Available]	Infiltrating Ductal Carcinoma
+TCGA-B6-A0IM	female	75.4	Stage IIB	T3	N0 (i-)	M0	black or african american	Dead	3873	3873	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-A2-A0ET	female	58.8	Stage IIIA	T2	N2a	M0	white	Alive	NA	1066	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A1G0	female	49.3	Stage IIB	T2	N1a	M0	white	Alive	NA	616	Positive	Positive	Equivocal	Other, specify
+TCGA-AR-A0U3	female	59.6	Stage IIB	T2	N1	M0	white	Alive	NA	4080	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A2BM	female	41.6	Stage IIB	T2	N1a	MX	black or african american	Alive	NA	3022	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CQ	female	62.5	Stage IA	T1	N0 (i-)	M0	black or african american	Alive	NA	2695	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A2LN	female	65.7	Stage IIA	T2	N0	M0	white	Alive	NA	1161	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A6VX	female	68.6	Stage IIA	T2	N0	M0	black or african american	Alive	NA	317	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A1FW	female	62.4	Stage IIIA	T3	N2a	M0	white	Alive	NA	528	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BQ	female	39.7	Stage I	T1c	N0	M0	white	Alive	NA	2255	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A0H0	female	69.1	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	461	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A27K	female	47.7	Stage IIB	T2	N1a	M0	white	Alive	NA	1461	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BF	female	56.6	Stage IIB	T2	N1mi	M0	white	Dead	1324	1324	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09B	female	58.9	Stage IIIB	T4b	N1a	M0	not reported	Alive	NA	365	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DP	female	60.8	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	476	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-W8-A86G	female	66.1	Stage IIA	T2a	N0 (i-)	MX	white	Alive	NA	347	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A8-A093	female	61.3	Stage IIA	T2	N0	M0	not reported	Alive	NA	546	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A084	female	81.7	Stage IIB	T2	N1a	M0	not reported	Alive	NA	458	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0GZ	female	62.2	Stage IIA	T1c	N1a	M0	white	Alive	NA	328	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-XX-A89A	female	68.4	Stage IIB	T3	N0	MX	white	Alive	NA	488	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E9-A1N6	female	52.9	Stage IIB	T2	N1	M0	white	Dead	678	678	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A24H	female	65.8	Stage IIA	T2	N0	M0	white	Alive	NA	4894	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A3RF	female	79.9	Stage IIA	T2	N0	M0	white	Alive	NA	408	Positive	Positive	Negative	Mucinous Carcinoma
+TCGA-A2-A0EX	female	46.2	Stage IIB	T3	N0 (i+)	M0	white	Alive	NA	752	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1B5	female	46.7	Stage IIA	T2	N0	M0	white	Alive	NA	984	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E9-A1N4	female	41.2	Stage IIIA	T2	N2	M0	white	Alive	NA	1000	Positive	Positive	Positive	Mixed Histology (please specify)
+TCGA-A8-A06O	female	60.7	Stage I	T1c	N0	M0	not reported	Alive	NA	396	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A440	female	61.6	Stage IA	T1c	N0 (i-)	MX	white	Alive	NA	759	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-B6-A0IN	female	45.7	Stage X	T1c	NX	MX	white	Dead	2573	2573	Positive	Negative	[Not Evaluated]	Other, specify
+TCGA-A8-A06Y	female	66.9	Stage IIA	T2	N0	M0	not reported	Alive	NA	791	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0IB	female	64.7	Stage IV	T3	N3	M1	white	Dead	3941	3941	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-EW-A1P5	female	77.1	Stage IIB	T2	N1a	M0	white	Alive	NA	703	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A15K	female	58.9	Stage IIB	T2	N1a	M0	white	Alive	NA	275	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FJ	female	60	Stage IV	T2	N2	M1	white	Alive	NA	242	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A18P	female	60.8	Stage I	T1	N0	M0	white	Dead	921	921	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-3C-AALI	female	50.8	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	4005	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E2-A14Z	female	64.8	Stage I	T1c	N0	M0	white	Dead	563	563	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AV	male	68.1	Stage IIB	T2	N1	M0	white	Alive	NA	1864	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TT	female	53.9	Stage IIIA	T2	N2	M0	black or african american	Alive	NA	3316	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FL	female	70	Stage IIB	T2	N1b	M0	white	Dead	1673	1673	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A7-A0D9	female	37.9	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1139	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1OY	female	63.7	Stage IIA	T2	N0	MX	white	Alive	NA	908	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0RL	female	60.9	Stage IIA	T2	N0 (i-)	M0	black or african american	Dead	2469	2469	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E9-A22E	female	56.3	Stage IIIA	T2	N2	M0	white	Alive	NA	1269	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A08Z	female	76.7	NA	T4b	N3a	M0	not reported	Alive	NA	1217	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A27N	female	36.3	Stage IIIA	T2	N2a	M0	white	Alive	NA	519	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FH	female	47	Stage IV	T2	N1b	M1	white	Dead	1034	1034	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A7-A3IZ	female	63	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	322	Positive	Negative	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E9-A1NG	female	62.7	Stage IIA	T2	N0	M0	white	Dead	786	786	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0WS	female	58.1	Stage X	T1c	NX	MX	black or african american	Dead	2965	2965	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AR-A250	female	58.3	Stage IIA	T2	N0	M0	white	Alive	NA	2707	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A24P	female	47.9	Stage I	T1	N0	M0	white	Alive	NA	84	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A1EU	female	83.1	Stage I	T1	N0	M0	white	Dead	1286	1286	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0B8	female	64	Stage I	T1b	N0 (i-)	M0	white	Alive	NA	1569	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0EW	female	53.1	Stage IIIC	T1b	N3a	M0	white	Dead	1884	1884	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A6NO	female	43.8	Stage IIB	T2	N1a	MX	black or african american	Alive	NA	51	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DO	female	78.1	Stage I	T1c	N0	M0	white	Alive	NA	1644	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A096	female	73.2	Stage IIA	T2	N0	M0	not reported	Alive	NA	0	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A8OS	female	71.9	Stage IIA	T2	N0 (i-)	MX	white	Alive	NA	70	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-D8-A1JD	female	41.5	Stage IIB	T2	N1a	M0	white	Alive	NA	552	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HF	female	77.3	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	727	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A18K	female	46.1	Stage I	T1	N0	M0	white	Dead	2763	2763	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A3Y0	female	57.6	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	1546	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A3XV	female	46.5	Stage IIA	T2	N0	M0	black or african american	Alive	NA	996	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E9-A22H	female	42.4	Stage IIB	T2	N1	M0	white	Alive	NA	1232	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SI	female	52.7	Stage IIB	T2	N1a	M0	white	Alive	NA	635	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CZ	female	46.6	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1616	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A8FZ	female	58.4	Stage IA	T1b	N0	M0	white	Alive	NA	574	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A15P	female	61.7	Stage IA	T1c	N0	M0	white	Alive	NA	595	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A1FG	female	88.4	Stage I	T1c	NX	M0	white	Dead	577	577	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A1BC	female	63.4	Stage IA	T1c	N0	M0	not reported	Alive	NA	501	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-OL-A6VR	female	48.5	Stage IA	T1b	N0	MX	black or african american	Alive	NA	1220	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A3BB	female	46.5	Stage IIIA	T3	N2a	MX	black or african american	Alive	NA	987	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A8-A09Q	female	83.6	Stage IIIB	T4b	N2a	M0	not reported	Alive	NA	761	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A15E	female	40.8	Stage IIA	T1c	N1a	M0	white	Alive	NA	630	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0H7	female	65.6	Stage IIIA	T1c	N2a	M0	white	Alive	NA	702	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A3KC	female	55.9	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	1102	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-BH-A18U	female	72.4	Stage IIIA	T2	N2a	M0	white	Dead	1563	1563	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A06Z	female	84.8	Stage IIB	T3	N0	M0	not reported	Alive	NA	31	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A0AB	female	54.2	Stage IIA	T2	N0	M0	not reported	Alive	NA	518	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AR-A1AJ	female	83.5	Stage I	T1	N0	M0	white	Alive	NA	2383	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JC	female	64.1	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1547	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0WZ	female	50.9	Stage II	T2	N1b	M0	black or african american	Alive	NA	6292	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XY	female	74.2	Stage IIA	T2	N0	MX	white	Alive	NA	503	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-S3-AA12	female	82.4	Stage IIIA	T3	N1a	MX	black or african american	Alive	NA	574	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A07Z	female	85.8	Stage IIA	T2	N0	M0	not reported	Alive	NA	1371	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-LL-A5YL	female	64.1	Stage IIB	T2	N1a	MX	white	Alive	NA	519	Positive	Negative	Positive	Infiltrating Lobular Carcinoma
+TCGA-A8-A0A4	female	73.1	Stage IIA	T2	N0	M0	not reported	Alive	NA	396	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A8-A076	female	66.3	Stage IIA	T2	N0	M0	not reported	Alive	NA	1642	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-OL-A66O	female	39.1	Stage IIB	T2	N1a	MX	black or african american	Alive	NA	528	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-AC-A3YI	female	74.3	Stage IIIC	T1c	N3a	MX	white	Alive	NA	707	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-V7-A7HQ	female	75.8	Stage IIIA	T1c	N2a	M0	black or african american	Alive	NA	2033	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A2-A0T6	female	50.2	Stage IIB	T3	N0 (i-)	M0	white	Alive	NA	575	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A1JC	female	60	Stage IIIA	T2	N2a	M0	white	Alive	NA	480	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DX	female	62.5	Stage I	T1b	N0	M0	white	Alive	NA	2156	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0IJ	female	42.8	Stage IIB	T3	N0 (i-)	M0	black or african american	Alive	NA	7106	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0B7	female	42.7	Stage IIB	T2	N1a	M0	white	Alive	NA	2559	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A1XZ	female	81.9	Stage IIIA	T1c	N2a	MX	white	Alive	NA	466	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A4SA	female	40.8	Stage IIB	T2	N1a	M0	white	Alive	NA	454	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-AR-A24L	female	26.6	Stage IIB	T2	N1	M0	white	Dead	2866	2866	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A0FY	female	55.7	Stage IA	T1c	N0	M0	white	Alive	NA	10	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A12E	female	51.3	Stage IIB	T3	N0 (i+)	M0	white	Alive	NA	2142	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A15J	female	51.4	Stage I	T1c	N0	M0	white	Alive	NA	1640	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-LL-A7SZ	female	49.7	Stage IIB	T2	N1a	MX	black or african american	Alive	NA	594	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A07W	female	76.5	Stage IV	T2	NX	M1	not reported	Alive	NA	304	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-AB28	female	53.6	Stage IIIA	T3	N1a	M0	white	Alive	NA	287	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A1-A0SQ	female	45.1	Stage IIB	T2	N1	MX	white	Alive	NA	554	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-GM-A3XN	female	44.1	Stage IIIA	T1c	N2a	M0	white	Alive	NA	2019	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1IE	female	61.6	Stage IIB	T2	N1	M0	white	Alive	NA	2362	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0ES	female	52.5	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	2190	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A1XG	female	86.9	Stage IIIB	T4b	N1a	M0	white	Alive	NA	448	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BT	female	56.5	Stage IIA	T1c	N1mi	M0	white	Alive	NA	2365	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0EA	female	72.7	Stage IIA	T1c	N1a	M0	white	Dead	991	991	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0IO	female	66.6	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	5042	Positive	Indeterminate	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E2-A14U	female	75	Stage I	T1c	N0	M0	white	Alive	NA	1318	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-B6-A0X0	female	54.2	Stage I	T1c	N0 (i-)	M0	white	Dead	3945	3945	Positive	Positive	[Not Evaluated]	Other, specify
+TCGA-LD-A7W5	female	52.5	Stage IIIC	T2	N3a	M0	black or african american	Alive	NA	216	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A15H	female	38.3	Stage IIA	T1c	N1mi	M0	white	Alive	NA	393	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-EW-A2FS	female	41.9	Stage IIB	T2	N1mi	MX	black or african american	Alive	NA	1604	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-C8-A130	female	52.3	Stage IIIA	T3	N2	M0	asian	Alive	NA	370	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-OL-A5RV	female	43.3	Stage IIIC	T2	N3	MX	black or african american	Alive	NA	1062	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0E7	female	79.7	Stage IIB	T2	N1a	M0	white	Alive	NA	1363	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A5XS	female	74.4	Stage IIA	T2	N0	MX	white	Alive	NA	588	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-A7-A426	female	50.1	Stage IIIC	T3	N3a	MX	white	Alive	NA	364	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A2FE	female	62.3	Stage IIIC	T3	N3a	MX	white	Dead	2636	2636	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A2-A04R	female	36.9	Stage IA	T1	N0 (i-)	M0	black or african american	Alive	NA	3709	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A25A	female	44	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	3276	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-BH-A0HX	female	54.5	Stage IIB	T2	N1a	M0	white	Alive	NA	829	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A156	female	61.4	Stage I	T1c	N0	M0	white	Alive	NA	726	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1P6	female	64.3	Stage IIB	T2	N1a	M0	white	Alive	NA	562	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A56D	female	84.3	Stage IIA	T2	N0	M0	black or african american	Alive	NA	448	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0DK	female	49.9	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	423	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-B6-A0WW	female	58.8	Stage X	T2	N1b	MX	black or african american	Dead	558	558	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0EB	female	69.2	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	745	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-GM-A2DL	female	50.6	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	3519	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1J1	female	38.7	Stage IIB	T2	N1a	M0	white	Alive	NA	575	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A1G4	female	71.1	Stage IIIA	T3	N1a	M0	white	Alive	NA	595	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0YG	female	63.1	Stage IIIC	T2	N3a	M0	white	Alive	NA	666	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SE	female	56.7	Stage I	T1c	N0 (i-)	M0	white	Alive	NA	1321	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-A1-A0SD	female	59.7	Stage IIA	T2	N0	M0	white	Alive	NA	437	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A0CX	female	52.4	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1728	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TZ	female	43	NA	T2	N2	M1	white	Dead	3262	3262	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-BH-A0AZ	female	47.8	Stage IIIA	T3	N1a	cM0 (i+)	white	Alive	NA	1919	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A7-A5ZW	female	48	Stage IIA	T1c	N1a	M0	black or african american	Alive	NA	326	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A1KT	female	78.5	Stage IIA	T1	N1	M0	white	Alive	NA	541	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A1-A0SJ	female	39.4	Stage IIIA	T3	N1a	M0	black or african american	Alive	NA	416	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-EW-A1P3	female	48.3	Stage IIA	T2	N0	MX	white	Alive	NA	1611	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-D8-A13Y	female	52.1	Stage IA	T1c	N0	M0	white	Alive	NA	1728	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A04V	female	39	Stage IIA	T2	N0 (i-)	M0	white	Dead	1920	1920	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A0XO	female	59.2	Stage IIIA	T2	N2	M0	white	Alive	NA	375	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-A2-A04N	female	66.1	Stage IA	T1c	N0 (i-)	M0	white	Alive	NA	4354	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-E2-A14Y	female	35.6	Stage IIA	T2	N0	M0	white	Alive	NA	2109	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-B6-A0I5	female	49.4	Stage IIB	T2	N1b	M0	white	Alive	NA	8556	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-S3-A6ZG	female	71.6	Stage IIB	T2	N1	M0	black or african american	Alive	NA	562	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-AR-A1AW	female	65.3	Stage IIA	T2	N0	M0	white	Alive	NA	2632	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AR-A24Z	female	57.2	Stage IIA	T2	N0	M0	white	Alive	NA	3001	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A7VB	female	51.5	Stage IIA	T1c	N1a	MX	black or african american	Alive	NA	250	Positive	Negative	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-BH-A0HQ	female	56.7	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	1121	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A0JF	female	68.2	Stage IIA	T1c	N1a	M0	white	Alive	NA	1980	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AX	female	64.4	Stage I	T1	N0	M0	white	Alive	NA	2629	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A1X5	female	81.4	Stage IIIC	T2	N3a	MX	white	Alive	NA	565	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-D8-A73W	female	79.7	Stage IIIA	T3	N1a	MX	white	Dead	385	385	Positive	Negative	Negative	Mucinous Carcinoma
+TCGA-E2-A1IH	female	80.6	Stage I	T1c	N0	M0	white	Alive	NA	1026	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A109	female	64.4	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	1417	Positive	Negative	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A15O	female	89.2	Stage I	T1c	NX	M0	black or african american	Alive	NA	289	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A4RX	female	67.8	Stage IIA	T2	N0	M0	black or african american	Alive	NA	742	Positive	Positive	Negative	Metaplastic Carcinoma
+TCGA-A8-A06R	female	69.8	Stage IIB	T2	N1a	M0	not reported	Alive	NA	547	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-E9-A3Q9	female	78.6	Stage IIIC	T3	N3	M0	white	Alive	NA	1001	Positive	Positive	Indeterminate	Infiltrating Lobular Carcinoma
+TCGA-AR-A0TX	female	64.8	Stage IIA	T1	N1	M0	not reported	Alive	NA	1972	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AN-A03Y	female	66.3	Stage IIA	T2	N0	M0	white	Alive	NA	10	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A15D	female	47.2	Stage IIA	T2	N0	M0	white	Alive	NA	526	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-GM-A5PX	female	65	Stage IIB	T2	N1mi	M0	white	Alive	NA	551	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-E2-A1L8	female	52.5	Stage IIB	T2	N1a	M0	black or african american	Alive	NA	2240	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-LL-A5YN	female	46.2	Stage IIA	T2	N0 (i-)	M0	black or african american	Alive	NA	447	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-S3-A6ZH	female	29.7	Stage IIIC	T3	N3a	MX	black or african american	Alive	NA	641	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-E2-A107	female	54.9	Stage IIIA	T3	N2a	M0	white	Alive	NA	1047	Positive	Negative	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-GM-A2DA	female	46.1	Stage IIB	T2	N1b	M0	white	Dead	6593	6593	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AC-A2QI	female	76.3	Stage IIIA	T3	N1a	MX	white	Alive	NA	588	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-AC-A2FO	female	65.5	Stage IIB	T2	N1	MX	white	Alive	NA	2255	Positive	Negative	Negative	Infiltrating Lobular Carcinoma
+TCGA-AO-A03P	female	54	Stage IIB	T2	N1	M0	black or african american	Dead	2911	2911	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-EW-A1IZ	female	54	Stage IIIA	T2	N2a	MX	white	Alive	NA	554	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AM	female	52.4	Stage IIIA	T3	N1	M0	white	Alive	NA	2991	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-OL-A66N	female	59.2	Stage IIIC	T3	N3	MX	white	Alive	NA	792	Positive	Negative	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-A8-A099	female	76.8	Stage X	T4b	N3a	MX	not reported	Alive	NA	304	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E2-A14W	male	78.5	Stage IIA	T2	N0	M0	white	Alive	NA	974	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-A7-A4SC	female	63	Stage IIB	T3	N0	MX	white	Alive	NA	446	Positive	Negative	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A2P5	female	78.4	Stage IIIC	T2	N3	M0	black or african american	Dead	821	821	Positive	Positive	[Not Evaluated]	Infiltrating Lobular Carcinoma
+TCGA-E2-A576	female	69.4	Stage IA	T1c	N0	MX	black or african american	Alive	NA	1043	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-E2-A15F	female	64.8	Stage I	T1c	N0	M0	white	Alive	NA	658	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A0BP	female	76.4	Stage I	T1c	N0	M0	white	Dead	2296	2296	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AN-A0XR	female	55.8	Stage IIIA	T2	N2	M0	white	Alive	NA	10	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AC-A23G	female	76.5	Stage IIA	T1c	N1	MX	white	Alive	NA	2248	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-EW-A1PD	male	61.7	Stage IIA	T1c	N1a	M0	white	Alive	NA	424	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AQ-A1H2	female	84.8	Stage IIIA	T2	N2a	MX	white	Alive	NA	475	Positive	Positive	Indeterminate	Infiltrating Ductal Carcinoma
+TCGA-D8-A1JH	female	56.1	Stage IA	T1c	N0	M0	white	Alive	NA	426	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-AR-A1AT	female	62.8	Stage IIA	T2	N0	M0	white	Dead	1272	1272	Positive	Positive	Positive	Infiltrating Lobular Carcinoma
+TCGA-AR-A2LK	female	62.4	Stage III	T3	N2	M0	white	Dead	1649	1649	Positive	Positive	Equivocal	Infiltrating Lobular Carcinoma
+TCGA-A8-A09A	female	40.7	Stage X	T2	NX	M0	not reported	Alive	NA	304	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A09V	female	51	Stage IIA	T2	N0	M0	not reported	Alive	NA	457	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-5T-A9QA	female	52.1	Stage IIA	T2	NX	MX	black or african american	Alive	NA	303	Positive	Negative	Equivocal	Other, specify
+TCGA-E2-A1IL	female	78	Stage IIA	T1c	N1a	M0	white	Alive	NA	118	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-AN-A03X	female	74.4	Stage IIA	T2	N0	M0	white	Alive	NA	10	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-WT-AB41	female	NA	Stage IIB	T2	N1mi	MX	black or african american	Alive	NA	1611	Positive	Positive	[Not Evaluated]	Infiltrating Ductal Carcinoma
+TCGA-D8-A140	female	62.7	Stage IIB	T2	N1a	M0	white	Alive	NA	403	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E2-A152	female	56.7	Stage I	T1c	N0	M0	white	Alive	NA	2128	Positive	Negative	Positive	Infiltrating Ductal Carcinoma
+TCGA-AC-A5EH	female	76.6	Stage IIB	T2	N1mi	MX	black or african american	Alive	NA	511	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E2-A106	female	34.3	Stage IB	T1c	N1mi	M0	asian	Alive	NA	2541	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-A2-A0SU	female	66.3	Stage IIA	T2	N0 (i+)	M0	white	Alive	NA	1662	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A1NI	female	52	Stage IIA	T2	N0	M0	white	Alive	NA	300	Positive	Positive	Negative	Mixed Histology (please specify)
+TCGA-AO-A1KO	female	46	Stage IIB	T3	N0 (i+)	M0	white	Alive	NA	622	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-D8-A1X8	female	63	Stage IIIA	T1c	N2a	M0	white	Alive	NA	783	Positive	Indeterminate	Negative	Infiltrating Lobular Carcinoma
+TCGA-C8-A1HE	female	NA	Stage IIA	T2	N0	M0	asian	Alive	NA	375	Positive	Positive	Equivocal	Infiltrating Ductal Carcinoma
+TCGA-AN-A04A	female	36.8	Stage IIIA	T2	N2	M0	white	Alive	NA	90	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A18H	female	63.1	Stage IA	T1b	N0	M0	white	Alive	NA	652	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-A8-A07B	female	69.7	Stage IIA	T2	N0	M0	not reported	Alive	NA	1308	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-AR-A0TP	female	43.3	Stage IIA	T2	N0	M0	white	Alive	NA	4275	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-E9-A1NH	female	71.8	Stage IIB	T2	N1	M0	white	Alive	NA	576	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-BH-A202	female	60.4	Stage II	T2	N0	M0	white	Alive	NA	795	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-EW-A2FV	female	39.2	Stage IIIC	T3	N3a	MX	white	Alive	NA	788	Positive	Positive	Negative	Other, specify
+TCGA-A8-A07L	female	58.7	Stage IIIA	T3	N1a	M0	not reported	Alive	NA	975	Positive	Positive	Negative	Infiltrating Ductal Carcinoma
+TCGA-A8-A090	female	74.3	Stage IIA	T2	N0	M0	not reported	Alive	NA	0	Positive	Positive	Positive	Infiltrating Ductal Carcinoma
+TCGA-E9-A5FK	female	60.8	Stage IIIC	T2	N3	M0	white	Alive	NA	812	Positive	Positive	Negative	Infiltrating Lobular Carcinoma
+TCGA-EW-A6SA	male	59.2	Stage II	T2	N0 (i+)	MX	black or african american	Alive	NA	510	Positive	Negative	Negative	Infiltrating Ductal Carcinoma
+TCGA-AO-A12B	female	63.4	Stage IIA	T2	N0 (i-)	M0	white	Alive	NA	2989	Positive	Positive	Negative	Infiltrating Ductal Carcinoma

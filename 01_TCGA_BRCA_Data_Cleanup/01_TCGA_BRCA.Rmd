@@ -1,0 +1,247 @@
+---
+title: "TCGA-BRCA: RNA-seq + clinical data cleanup (ER+ MBC vs FBC cohort)"
+author: "Junkai Wang"
+date: "Original: 7/1/2020; revised: 9/4/2026"
+output:
+  html_document:
+    keep_md: true
+    toc: true
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r setup}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE)
+knitr::opts_knit$set(root.dir = ".")
+
+raw_dir <- "Raw_Data"
+out_dir <- "Output"
+dir.create(raw_dir, showWarnings = FALSE)
+dir.create(out_dir, showWarnings = FALSE)
+
+f_se     <- file.path(raw_dir, "TCGA_BRCA_SE_raw.rds")
+f_biotab <- file.path(raw_dir, "TCGA_BRCA_biotab.rds")
+
+library(TCGAbiolinks)
+library(SummarizedExperiment)
+library(data.table)
+library(tidyverse)
+```
+
+## 1. Download RNA-seq expression (STAR counts, harmonized)
+
+```{r download-expression, eval = !file.exists(file.path("Raw_Data", "TCGA_BRCA_SE_raw.rds"))}
+query_exp <- GDCquery(
+  project       = "TCGA-BRCA",
+  data.category = "Transcriptome Profiling",
+  data.type     = "Gene Expression Quantification",
+  workflow.type = "STAR - Counts"
+)
+GDCdownload(query_exp, files.per.chunk = 50, directory = file.path(raw_dir, "GDCdata"))
+se <- GDCprepare(query_exp, directory = file.path(raw_dir, "GDCdata"))
+assays(se) <- assays(se)[c("unstranded", "tpm_unstrand")]
+saveRDS(se, f_se)                                 # checkpoint
+```
+
+```{r load-expression}
+se <- readRDS(f_se)
+dim(se)
+### ~60,660 genes x ~1,230 samples (all sample types) ###
+```
+
+## 2. Clinical data A: indexed clinical (sex, age, stage, survival)
+
+```{r clinical-indexed}
+clin <- GDCquery_clinic(project = "TCGA-BRCA", type = "clinical")
+dim(clin)
+
+clin_core <- clin %>%
+  transmute(
+    patient_id = submitter_id,
+    gender     = tolower(.data[["sex_at_birth"]]),
+    age        = round(age_at_diagnosis / 365.25, 1),   # age_at_diagnosis is in days
+    stage      = ajcc_pathologic_stage,
+    T_stage    = ajcc_pathologic_t,
+    N_stage    = ajcc_pathologic_n,
+    M_stage    = ajcc_pathologic_m,
+    race, vital_status, days_to_death, days_to_last_follow_up
+  ) %>%
+  distinct(patient_id, .keep_all = TRUE)
+dim(clin_core)
+
+table(clin_core$gender, useNA = "ifany")
+stopifnot(!anyDuplicated(clin_core$patient_id))
+```
+
+## 3. Clinical data B: BCR Biotab (ER / PR / HER2 by IHC)
+
+ER/PR/HER2 IHC status is in the BCR Biotab supplement, not in the indexed clinical table.
+
+```{r download-biotab, eval = !file.exists(file.path("Raw_Data", "TCGA_BRCA_biotab.rds"))}
+query_clin <- GDCquery(
+  project       = "TCGA-BRCA",
+  data.category = "Clinical",
+  data.type     = "Clinical Supplement",
+  data.format   = "BCR Biotab"
+)
+GDCdownload(query_clin, directory = file.path(raw_dir, "GDCdata"))
+biotab <- GDCprepare(query_clin, directory = file.path(raw_dir, "GDCdata"))
+saveRDS(biotab, f_biotab)                         # checkpoint
+```
+
+```{r clinical-biotab}
+biotab <- readRDS(f_biotab)
+
+receptor <- biotab$clinical_patient_brca %>%
+  dplyr::slice(-1, -2) %>%                                # first two rows are CDE header descriptions
+  transmute(
+    patient_id = bcr_patient_barcode,
+    ER_status  = er_status_by_ihc,
+    PR_status  = pr_status_by_ihc,
+    HER2_IHC   = her2_status_by_ihc,
+    histology  = histological_type
+  ) %>%
+  distinct(patient_id, .keep_all = TRUE)
+dim(receptor)
+
+table(receptor$ER_status, useNA = "ifany")
+```
+
+## 4. Sample selection log
+
+Each step records number of samples / patients and the male/female split.
+
+```{r selection-log}
+log_step <- function(barcodes, step, log = NULL) {
+  pid <- unique(substr(barcodes, 1, 12))
+  sex <- clin_core$gender[match(pid, clin_core$patient_id)]
+  rbind(log, data.table(step = step, n_samples = length(barcodes), n_patients = length(pid),
+                        male = sum(sex == "male", na.rm = TRUE),
+                        female = sum(sex == "female", na.rm = TRUE)))
+}
+
+# Step 0: all RNA-seq aliquots in TCGA-BRCA
+bc0  <- colnames(se)
+slog <- log_step(bc0, "0. All TCGA-BRCA RNA-seq aliquots (GDC STAR-Counts)")
+
+# Step 1: primary tumors only (sample type 01); drops solid tissue normal (11) and metastatic (06)
+table(substr(bc0, 14, 15))
+bc1  <- bc0[substr(bc0, 14, 15) == "01"]
+slog <- log_step(bc1, "1. Primary tumor samples (sample type 01)", slog)
+
+# Step 2: one aliquot per patient (keep first occurrence; TCGA replicate aliquots)
+bc2  <- bc1[!duplicated(substr(bc1, 1, 12))]
+slog <- log_step(bc2, "2. One aliquot per patient", slog)
+
+# Step 3: has indexed clinical data with sex
+pid3 <- substr(bc2, 1, 12)
+bc3  <- bc2[pid3 %in% clin_core$patient_id[!is.na(clin_core$gender)]]
+slog <- log_step(bc3, "3. Clinical data with sex available", slog)
+
+# Step 4: ER-positive by IHC (study cohort; all TCGA MBC cases are ER+)
+er_pos <- receptor$patient_id[receptor$ER_status == "Positive" & !is.na(receptor$ER_status)]
+bc4  <- bc3[substr(bc3, 1, 12) %in% er_pos]
+slog <- log_step(bc4, "4. ER-positive by IHC (BCR Biotab)", slog)
+
+knitr::kable(slog, caption = "Sample selection log, TCGA-BRCA")
+fwrite(slog, file.path(out_dir, "TCGA_BRCA_sample_selection_log.tsv"), sep = "\t")
+
+# Manuscript numbers: 12 male / 784 female ER+. GDC releases change slightly over time,
+# so male is a hard check and female is reported for comparison.
+stopifnot(slog[.N, male] == 12)
+if (slog[.N, female] != 784)
+  message("NOTE: female ER+ n = ", slog[.N, female], " (manuscript: 784). Document in Methods.")
+
+# What was excluded at the ER step (for the response letter)
+excl <- data.table(patient_id = substr(setdiff(bc3, bc4), 1, 12))
+excl <- merge(excl, receptor[, c("patient_id", "ER_status")], by = "patient_id", all.x = TRUE)
+excl <- merge(excl, clin_core[, c("patient_id", "gender")], by = "patient_id", all.x = TRUE)
+excl[, .N, by = .(ER_status, gender)][order(gender, ER_status)]
+```
+
+## 5. Expression matrices (all primary tumors, then ER+ cohort)
+
+```{r expression-matrices}
+se_tumor <- se[, bc3]
+stopifnot(!anyDuplicated(substr(colnames(se_tumor), 1, 12)))
+colnames(se_tumor) <- substr(colnames(se_tumor), 1, 12)   # patient IDs
+
+counts <- assay(se_tumor, "unstranded")
+tpm    <- assay(se_tumor, "tpm_unstrand")
+
+gene_info <- as.data.frame(rowData(se_tumor)) %>%
+  select(gene_id, gene_name, gene_type)
+gene_info$ensembl_id <- sub("\\.\\d+$", "", gene_info$gene_id)
+
+# Symbol-level matrices: per symbol keep the Ensembl row with highest mean expression
+collapse_to_symbol <- function(mat, symbols) {
+  keep <- !is.na(symbols) & symbols != ""
+  mat  <- mat[keep, ]; symbols <- symbols[keep]
+  o    <- order(-rowMeans(mat))
+  mat  <- mat[o, ]; symbols <- symbols[o]
+  mat  <- mat[!duplicated(symbols), ]
+  rownames(mat) <- symbols[!duplicated(symbols)]
+  mat
+}
+counts_sym <- collapse_to_symbol(counts, gene_info$gene_name)
+tpm_sym    <- collapse_to_symbol(tpm,    gene_info$gene_name)
+dim(counts_sym); counts_sym[1:5, 1:3]
+```
+
+## 6. Merge clinical tables and align with expression
+
+```{r merge-align}
+clinical_full <- clin_core %>%
+  left_join(receptor, by = "patient_id") %>%
+  filter(patient_id %in% colnames(counts_sym)) %>%
+  arrange(match(patient_id, colnames(counts_sym)))
+dim(clinical_full)
+
+stopifnot(identical(colnames(counts_sym), clinical_full$patient_id),
+          identical(colnames(tpm_sym),    clinical_full$patient_id))
+
+table(clinical_full$gender, clinical_full$ER_status, useNA = "ifany")
+```
+
+## 7. ER-positive cohort
+
+```{r er-subset}
+clinical_ER <- clinical_full %>% filter(ER_status == "Positive")
+counts_ER   <- counts_sym[, clinical_ER$patient_id]
+tpm_ER      <- tpm_sym[,   clinical_ER$patient_id]
+counts_ER_ensembl <- counts[, clinical_ER$patient_id]
+tpm_ER_ensembl    <- tpm[,    clinical_ER$patient_id]
+
+table(clinical_ER$gender)
+stopifnot(sum(clinical_ER$gender == "male") == 12)
+```
+
+## 8. Write outputs
+
+```{r save-outputs}
+wt <- function(x, f, rn = "GeneSymbol")
+  write_tsv(as.data.frame(x) %>% rownames_to_column(rn), file.path(out_dir, f))
+
+# ER+ cohort (study cohort)
+wt(counts_ER,          "output_TCGA_BRCA_ERpos_counts.tsv")
+wt(tpm_ER,             "output_TCGA_BRCA_ERpos_TPM.tsv")
+wt(counts_ER_ensembl,  "output_TCGA_BRCA_ERpos_counts_ensembl.tsv", "gene_id")
+wt(tpm_ER_ensembl,     "output_TCGA_BRCA_ERpos_TPM_ensembl.tsv",    "gene_id")
+write_tsv(clinical_ER, file.path(out_dir, "output_TCGA_BRCA_ERpos_clinical.tsv"))
+
+# All primary tumors (for reference / alternative cohorts)
+write_tsv(clinical_full, file.path(out_dir, "output_TCGA_BRCA_all_primary_clinical.tsv"))
+write_tsv(gene_info,     file.path(out_dir, "output_TCGA_BRCA_gene_annotation.tsv"))
+
+saveRDS(list(counts_sym = counts_sym, tpm_sym = tpm_sym,
+             counts_ensembl = counts, tpm_ensembl = tpm,
+             clinical = clinical_full, gene_info = gene_info, selection_log = slog,
+             version = paste("GDC TCGA-BRCA STAR-Counts, downloaded", Sys.Date())),
+        file.path(out_dir, "TCGA_BRCA_primary.rds"))
+
+list.files(out_dir)
+```
+
+```{r session}
+sessionInfo()
+```
